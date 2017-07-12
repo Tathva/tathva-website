@@ -1,0 +1,115 @@
+@import 'src/theme';
+
+$dark: #333;
+$fore-colour: #fff;
+
+.mat-button {
+  &.md-small {
+    min-width: 1%;
+    padding: 0 8px;
+  }
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 64px);
+}
+
+md-sidenav {
+  min-height: 100vh;
+  width: 200px;
+}
+
+md-toolbar {
+  background: $dark;
+  color: $fore-colour;
+
+  .navlist {
+    list-style-type: none;
+
+    li {
+      display: inline;
+    }
+
+    li~li {
+      border-left: 1px solid $fore-colour;
+    }
+  }
+
+  .linklist {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 120px;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    ul > li {
+      display: list-item;
+      list-style-type: none;
+    }
+
+    li > ul {
+      padding-left: 0;
+    }
+
+    h3 {
+      font-size: .8em;
+    }
+
+    a {
+      color: $fore-colour;
+      font-size: .6em;
+      text-decoration: none;
+    }
+
+    .linkset {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+section {
+  flex: 1;
+}
+
+md-list[dense] {
+  padding-top: 120px;
+}
+
+.mat-list-item {
+  color: $fore-colour;
+  line-height: 24px;
+
+  a {
+    color: $fore-colour;
+    text-decoration: none;
+  }
+}
+
+@mixin footer-styling($height) {
+  section {
+    padding-bottom: -$height;
+  }
+
+  footer {
+    md-toolbar {
+      height: $height;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  @include footer-styling($height: 50px);
+}
+@media screen and (min-width: 960px) {
+  @include footer-styling($height: 200px);
+}

@@ -1,0 +1,6 @@
+<button md-button [mdMenuTriggerFor]="menu">
+  {{item.title}}
+</button>
+<md-menu #menu="mdMenu" yPosition="below" [overlapTrigger]="false">
+  <a md-menu-item *ngFor="let link of item.links" routerLink="{{link.url}}">{{link.name}}</a>
+</md-menu>

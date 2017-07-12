@@ -1,0 +1,16 @@
+@import 'app.component';
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &:active {
+    color: mat-color($tathva-app-primary);
+  }
+
+  &:hover {
+    background: mat-color($tathva-app-primary);
+    color: $fore-colour;
+  }
+
+}
