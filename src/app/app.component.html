@@ -1,12 +1,12 @@
 <md-sidenav-container fullscreen>
     <md-sidenav #sidenav mode="push">
-        <md-nav-list dense>
+        <md-nav-list dense (click)="sidenav.close()">
             <app-sidebar-item *ngFor="let link of nav_links" [item]="link"></app-sidebar-item>
         </md-nav-list>
     </md-sidenav>
 
-    <header>
-        <md-toolbar>
+    <header class="mat-elevation-z3">
+        <md-toolbar color="primary">
             <button md-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm class="md-small">
                 <md-icon>menu</md-icon>
             </button>
@@ -31,17 +31,17 @@
 
     <div class="site">
 
-        <section>
+        <section >
             <router-outlet></router-outlet>
         </section>
 
         <footer>
-            <md-toolbar class="footer">
+            <md-toolbar class="footer" color="primary">
                 <ul class="linklist" fxShow="false" fxShow.gt-sm>
                     <li *ngFor="let item of nav_links" class="linkset">
                         <h3>{{item.title | uppercase}}</h3>
                         <ul>
-                            <li *ngFor="let link of item.links"><a routerLink="{{link.url}}">{{link.name}}</a></li>
+                            <li *ngFor="let link of item.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
                         </ul>
                     </li>
                 </ul>

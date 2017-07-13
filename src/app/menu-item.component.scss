@@ -14,3 +14,9 @@ button {
   }
 
 }
+
+a {
+  &:active {
+    color: mat-color($tathva-app-primary);
+  }
+}
