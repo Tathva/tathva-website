@@ -1,7 +1,7 @@
 <md-sidenav-container fullscreen>
     <md-sidenav #sidenav mode="push">
         <md-nav-list dense (click)="sidenav.close()">
-            <app-sidebar-item *ngFor="let link of nav_links" [item]="link"></app-sidebar-item>
+            <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
         </md-nav-list>
     </md-sidenav>
 
@@ -16,12 +16,11 @@
                 Tathva International School</h1>
             </button>
 
-            <!-- This fills the remaining space of the current row -->
             <span class="fill-remaining-space"></span>
             <div fxLayout="row" fxShow="false" fxShow.gt-sm>
                 <ul class="navlist">
-                    <li *ngFor="let link of nav_links">
-                        <app-menu-item [item]="link"></app-menu-item>
+                    <li *ngFor="let group of nav_groups">
+                        <app-menu-item [item]="group"></app-menu-item>
                     </li>
                 </ul>
             </div>
@@ -38,10 +37,10 @@
         <footer>
             <md-toolbar class="footer" color="primary">
                 <ul class="linklist" fxShow="false" fxShow.gt-sm>
-                    <li *ngFor="let item of nav_links" class="linkset">
-                        <h3>{{item.title | uppercase}}</h3>
+                    <li *ngFor="let group of nav_groups" class="linkset">
+                        <h3>{{group.title | uppercase}}</h3>
                         <ul>
-                            <li *ngFor="let link of item.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
+                            <li *ngFor="let link of group.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
                         </ul>
                     </li>
                 </ul>

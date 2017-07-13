@@ -15,22 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutModule } from './about/about.module';
 import { AppMaterialModule } from './app-material.module';
 
-const SWIPER_CONFIG: SwiperConfigInterface = {
-    scrollbar: null,
-    direction: 'horizontal',
-    slidesPerView: 1,
-    scrollbarHide: false,
-    keyboardControl: true,
-    mousewheelControl: true,
-    scrollbarDraggable: true,
-    scrollbarSnapOnRelease: true,
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    autoplay: 5000,
-    loop: true
-};
+
 
 
 @NgModule({
@@ -44,7 +29,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
     BrowserModule,
     AppMaterialModule,
     FlexLayoutModule,
-    SwiperModule.forRoot(SWIPER_CONFIG),
+    SwiperModule,
     AboutModule,
     AppRoutingModule
   ],

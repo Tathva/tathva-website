@@ -1,6 +1,15 @@
-<swiper overlay-controls>
+<div [swiper]="config" class="swiper-container" (indexChange)="onIndexChange($event)" [runInsideAngular]="true">
+  <div class="swiper-wrapper">
+
     <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_1.jpg"></div>
-    <div class="swiper-slide"><img src="../assets/carousel/carousel_2.jpg"></div>
-    <div class="swiper-slide"><img src="../assets/carousel/carousel_3.jpg"></div>
-    <div class="swiper-slide"><img src="../assets/carousel/carousel_4.jpg"></div>
-</swiper>
+    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_2.jpg"></div>
+    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_3.jpg"></div>
+    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_4.jpg"></div>
+  </div>
+
+
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"><md-icon>keyboard_arrow_left</md-icon></div>
+  <div class="swiper-button-next"><md-icon>keyboard_arrow_right</md-icon></div>
+</div>

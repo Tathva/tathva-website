@@ -1,5 +1,15 @@
 import { Component } from '@angular/core';
 
+interface Link {
+  url: string,
+  name: string
+}
+
+interface LinkGroup {
+  title: string,
+  links: Link[]
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,23 +17,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nav_links = [
-    {
-      title: 'About Us',
-      links: [
-        {
-          url: '/about/vision',
-          name: 'Our Vision'
-        },
-        {
-          url: '/about/team',
-          name: 'Our Team'
-        },
-        {
-          url: '/about/contact',
-          name: 'Contact Us'
-        },
-      ]
+  nav_groups: LinkGroup[] = [
+     {
+        title: 'About Us',
+        links: [
+          {
+            url: '/about/vision',
+            name: 'Our Vision'
+          },
+          {
+            url: '/about/team',
+            name: 'Our Team'
+          },
+          {
+            url: '/about/contact',
+            name: 'Contact Us'
+          },
+        ]
     },
     {
       title: 'Admissions',
