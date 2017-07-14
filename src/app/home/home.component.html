@@ -1,15 +1,44 @@
 <div [swiper]="config" class="swiper-container" (indexChange)="onIndexChange($event)" [runInsideAngular]="true">
-  <div class="swiper-wrapper">
+    <div class="swiper-wrapper">
 
-    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_1.jpg"></div>
-    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_2.jpg"></div>
-    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_3.jpg"></div>
-    <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_4.jpg"></div>
-  </div>
+        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_1.jpg"></div>
+        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_2.jpg"></div>
+        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_3.jpg"></div>
+        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_4.jpg"></div>
+    </div>
 
 
-  <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
 
-  <div class="swiper-button-prev"><md-icon>keyboard_arrow_left</md-icon></div>
-  <div class="swiper-button-next"><md-icon>keyboard_arrow_right</md-icon></div>
+    <div class="swiper-button-prev">
+        <md-icon>keyboard_arrow_left</md-icon>
+    </div>
+    <div class="swiper-button-next">
+        <md-icon>keyboard_arrow_right</md-icon>
+    </div>
+</div>
+<div class="mat-typography page-body" fxLayout="column" fxLayoutWrap>
+    <div class="heading-item">
+        <h1 class="mat-primary">Our Vision</h1>
+    </div>
+    <div fxFlexAlign="center" class="body-item">
+        <p>Tathva International School in Japan is an initiative to nurture academic excellence and to demonstrate leadership
+            in character development. Our school is committed to providing a learning environment where each student is empowered
+            for his or her own social, academic and physical well-being in order to become a contributing member of the society.
+        </p>
+    </div>
+
+    <div ngui-parallax style="height: 300px" class="parallax">
+        <img src="../assets/home/banner.jpg" />
+    </div>
+    
+    <div class="heading-item">
+        <h1 class="mat-primary">Our Vision</h1>
+    </div>
+    <div fxFlexAlign="center" class="body-item">
+        <p>Tathva International School in Japan is an initiative to nurture academic excellence and to demonstrate leadership
+            in character development. Our school is committed to providing a learning environment where each student is empowered
+            for his or her own social, academic and physical well-being in order to become a contributing member of the society.
+        </p>
+    </div>
 </div>

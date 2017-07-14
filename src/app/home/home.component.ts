@@ -14,7 +14,9 @@ export class HomeComponent implements OnInit {
     paginationClickable: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    loop: true
+    loop: true,
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false
   };
 
   constructor() { }
