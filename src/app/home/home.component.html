@@ -1,15 +1,12 @@
-<div [swiper]="config" class="swiper-container" (indexChange)="onIndexChange($event)" [runInsideAngular]="true">
-    <div class="swiper-wrapper">
+<div [swiper]="config" class="swiper-container" [runInsideAngular]="true">
 
-        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_1.jpg"></div>
-        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_2.jpg"></div>
-        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_3.jpg"></div>
-        <div class="swiper-slide" fxLayout="column" fxLayoutAlign="center center"><img src="../assets/carousel/carousel_4.jpg"></div>
+    <div class="swiper-wrapper">
+        <div *ngFor="let image of images" class="swiper-slide" fxLayout="column" fxLayoutAlign="center center">
+            <img src="{{image}}" />
+        </div>
     </div>
 
-
     <div class="swiper-pagination"></div>
-
     <div class="swiper-button-prev">
         <md-icon>keyboard_arrow_left</md-icon>
     </div>
@@ -17,6 +14,7 @@
         <md-icon>keyboard_arrow_right</md-icon>
     </div>
 </div>
+
 <div class="mat-typography page-body" fxLayout="column" fxLayoutWrap>
     <div class="heading-item mat-elevation-z3">
         <h1 class="mat-primary">Our Vision</h1>
@@ -42,10 +40,74 @@
             and gives the learners of our school an advantage when applying for university. Our school is a university preparatory
             school with a rigorous curriculum and high standards.
         </p>
+        <a href="http://www.cie.org.uk/" target="_blank" md-raised-button color="accent">Read More</a>
     </div>
 
-    <div ngui-parallax class="mat-elevation-z1 parallax">
+    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+        <md-card class="values-card" fxFlex>
+            <md-card-title>Educate</md-card-title>
+            <md-card-content>
+                <p>
+                    Children with strong fundamentals and encourage them to apply and experience their learnings.
+                </p>
+            </md-card-content>
+        </md-card>
+        <md-card class="values-card" fxFlex>
+            <md-card-title>Embellish</md-card-title>
+            <md-card-content>
+                <p>
+                    Children’s personality by teaching them to be self-reliant, confident, socially responsible.
+                </p>
+            </md-card-content>
+        </md-card>
+        <md-card class="values-card" fxFlex>
+            <md-card-title>Enlighten</md-card-title>
+            <md-card-content>
+                <p>
+                    Children to identify their dream &amp; inspire them to be a leader in the field of their choice.
+                </p>
+            </md-card-content>
+        </md-card>
+    </div>
+
+    <div ngui-parallax class="mat-elevation-z1">
         <img src="../assets/home/banner2.jpg" />
-    </div>
 
+        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+            <md-card class="links-card" fxLayout="column">
+                <md-card-title>Our Vision and Mission</md-card-title>
+                <md-card-content fxFlex.gt-xs>
+                    <p>
+                        Transform every student associating with Tathva into a great social leader in their field of choice.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <a routerLink="/about/vision" md-button color="accent">Read More</a>
+                </md-card-actions>
+            </md-card>
+            <md-card class="links-card" fxLayout="column">
+                <md-card-title>Meet Our Leaders</md-card-title>
+                <md-card-content fxFlex.gt-xs>
+                    <p>
+                        We actually dont have text for this on the main website so we should fix that.
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <a routerLink="/about/team" md-button color="accent">Read More</a>
+                </md-card-actions>
+            </md-card>
+            <md-card class="links-card" fxLayout="column">
+                <md-card-title>Board and Affiliations</md-card-title>
+                <md-card-content fxFlex.gt-xs>
+                    <p>
+                        Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint,Cambridge Checkpoint,
+                        IGCSE, O Level, AS/A Level (including science practical components)
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <a routerLink="/education/cambridge" md-button color="accent">Read More</a>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </div>
 </div>

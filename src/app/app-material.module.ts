@@ -8,7 +8,8 @@ import {
     MdCheckboxModule,
     MdToolbarModule,
     MdSidenavModule,
-    MdListModule
+    MdListModule,
+    MdCardModule
 } from '@angular/material';
 
 @NgModule({
@@ -20,7 +21,8 @@ import {
         MdMenuModule,
         MdToolbarModule,
         MdSidenavModule,
-        MdListModule
+        MdListModule,
+        MdCardModule
     ],
     exports: [
         BrowserAnimationsModule,
@@ -30,7 +32,8 @@ import {
         MdMenuModule,
         MdToolbarModule,
         MdSidenavModule,
-        MdListModule
+        MdListModule,
+        MdCardModule
     ],
 })
 export class AppMaterialModule { }

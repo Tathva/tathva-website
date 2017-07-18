@@ -69,6 +69,7 @@ h1 {
 
 .parallax {
   width: 100%;
+  z-index: 2;
 
   img {
     width: auto;
@@ -86,5 +87,30 @@ h1 {
 @media screen and (max-width: 959px) {
   .parallax {
     height: 150px;
+  }
+}
+
+.cards {
+  padding: 20px;
+}
+
+.values-card {
+  background-color: mat-color($tathva-app-primary);
+  color: $fore-color;
+  max-width: 60vw;
+}
+
+.links-card {
+  max-width: 60vw;
+}
+
+@media screen and (min-width: 960px) {
+  .values-card {
+    max-width: 300px;
+  }
+
+  .links-card {
+    max-width: 300px;
+
   }
 }

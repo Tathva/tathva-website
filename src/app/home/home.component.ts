@@ -19,7 +19,11 @@ export class HomeComponent {
     autoplayDisableOnInteraction: false
   };
 
-  onIndexChange(index: number) {
-    console.log('Swiper index: ' + index);
-  }
+  public images = [
+    '../assets/carousel/carousel_1.jpg',
+    '../assets/carousel/carousel_2.jpg',
+    '../assets/carousel/carousel_3.jpg',
+    '../assets/carousel/carousel_4.jpg'
+  ];
+
 }
