@@ -1,9 +1,5 @@
 @import 'src/theme';
 
-$dark: #333;
-$footer-height: 200px;
-$fore-colour: #fff;
-
 .mat-button {
   &.md-small {
     min-width: 1%;
@@ -84,7 +80,6 @@ footer {
   md-toolbar {
     height: $footer-height;
   }
-  
 
   a {
     color: mat-color($tathva-app-accent);

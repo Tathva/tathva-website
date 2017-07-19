@@ -46,6 +46,10 @@ export class AppComponent {
           url: '/admissions/process',
           name: 'Our Process'
         },
+        {
+          url: '/admissions/apply',
+          name: 'Apply for Admission'
+        },
       ]
     },
     {

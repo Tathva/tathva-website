@@ -1,4 +1,20 @@
-<p>
-  about works!
-  <router-outlet></router-outlet>
-</p>
+<div class="mat-typography" fxLayout="row" fxLayoutAlign="start start">
+
+  <div class="sidelinks" fxShow="false" fxShow.gt-sm>
+    <ul class="linklist">
+      <li class="linkset">
+        <h4>ABOUT US</h4>
+        <ul>
+          <li><a routerLink="vision" routerLinkActive="active">Our Vision</a></li>
+          <li><a routerLink="team" routerLinkActive="active">Our Team</a></li>
+          <li><a routerLink="contact" routerLinkActive="active">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content" fxFlex>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
