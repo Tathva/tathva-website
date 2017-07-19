@@ -26,10 +26,14 @@
     &.active {
       color: mat-color($tathva-app-primary);
     }
+
+    &:hover {
+      color: mat-color($tathva-app-accent);
+    }
   }
 
   .linkset {
-    border-right: 1px solid;
+    border-right: 1px solid mat-color($tathva-app-primary);
     padding-left: 10px;
     padding-right: 10px;
     text-align: right;
