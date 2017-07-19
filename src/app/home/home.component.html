@@ -26,9 +26,7 @@
         </p>
     </div>
 
-    <div ngui-parallax class="mat-elevation-z1 parallax">
-        <img src="../assets/home/banner.jpg" />
-    </div>
+    <div parallax class="mat-elevation-z1 parallax" id="parallax-1"></div>
 
     <div class="heading-item mat-elevation-z3">
         <h1 class="mat-primary">Our Education</h1>
@@ -43,69 +41,72 @@
         <a href="http://www.cie.org.uk/" target="_blank" md-raised-button color="accent">Read More</a>
     </div>
 
-    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
-        <md-card class="values-card" fxFlex>
-            <md-card-title>Educate</md-card-title>
-            <md-card-content>
-                <p>
-                    Children with strong fundamentals and encourage them to apply and experience their learnings.
-                </p>
-            </md-card-content>
-        </md-card>
-        <md-card class="values-card" fxFlex>
-            <md-card-title>Embellish</md-card-title>
-            <md-card-content>
-                <p>
-                    Children’s personality by teaching them to be self-reliant, confident, socially responsible.
-                </p>
-            </md-card-content>
-        </md-card>
-        <md-card class="values-card" fxFlex>
-            <md-card-title>Enlighten</md-card-title>
-            <md-card-content>
-                <p>
-                    Children to identify their dream &amp; inspire them to be a leader in the field of their choice.
-                </p>
-            </md-card-content>
-        </md-card>
+    <div class="cards-container">
+        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+            <md-card class="values-card" fxFlex>
+                <md-card-title>Educate</md-card-title>
+                <md-card-content>
+                    <p>
+                        Children with strong fundamentals and encourage them to apply and experience their learnings.
+                    </p>
+                </md-card-content>
+            </md-card>
+            <md-card class="values-card" fxFlex>
+                <md-card-title>Embellish</md-card-title>
+                <md-card-content>
+                    <p>
+                        Children’s personality by teaching them to be self-reliant, confident, socially responsible.
+                    </p>
+                </md-card-content>
+            </md-card>
+            <md-card class="values-card" fxFlex>
+                <md-card-title>Enlighten</md-card-title>
+                <md-card-content>
+                    <p>
+                        Children to identify their dream &amp; inspire them to be a leader in the field of their choice.
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
     </div>
 
-    <div ngui-parallax class="mat-elevation-z1">
-        <img src="../assets/home/banner2.jpg" />
+    <div parallax class="mat-elevation-z1 cards-container links-parallax">
 
         <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
             <md-card class="links-card" fxLayout="column">
-                <md-card-title>Our Vision and Mission</md-card-title>
-                <md-card-content fxFlex.gt-xs>
-                    <p>
-                        Transform every student associating with Tathva into a great social leader in their field of choice.
-                    </p>
-                </md-card-content>
-                <md-card-actions>
-                    <a routerLink="/about/vision" md-button color="accent">Read More</a>
-                </md-card-actions>
-            </md-card>
-            <md-card class="links-card" fxLayout="column">
                 <md-card-title>Meet Our Leaders</md-card-title>
-                <md-card-content fxFlex.gt-xs>
+                <md-card-content fxFlex>
                     <p>
                         We actually dont have text for this on the main website so we should fix that.
                     </p>
                 </md-card-content>
                 <md-card-actions>
-                    <a routerLink="/about/team" md-button color="accent">Read More</a>
+                    <a routerLink="/about/team" md-raised-button color="accent">Read More</a>
                 </md-card-actions>
             </md-card>
+
             <md-card class="links-card" fxLayout="column">
                 <md-card-title>Board and Affiliations</md-card-title>
-                <md-card-content fxFlex.gt-xs>
+                <md-card-content fxFlex>
                     <p>
                         Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint,Cambridge Checkpoint,
                         IGCSE, O Level, AS/A Level (including science practical components)
                     </p>
                 </md-card-content>
                 <md-card-actions>
-                    <a routerLink="/education/cambridge" md-button color="accent">Read More</a>
+                    <a routerLink="/education/cambridge" md-raised-button color="accent">Read More</a>
+                </md-card-actions>
+            </md-card>
+
+            <md-card class="links-card" fxLayout="column">
+                <md-card-title>Apply Today</md-card-title>
+                <md-card-content fxFlex>
+                    <p>
+                        Some nice text about applying today
+                    </p>
+                </md-card-content>
+                <md-card-actions>
+                    <a routerLink="/admissions/apply" md-raised-button color="accent">Apply Now</a>
                 </md-card-actions>
             </md-card>
         </div>

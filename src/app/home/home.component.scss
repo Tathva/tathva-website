@@ -68,14 +68,9 @@ h1 {
 }
 
 .parallax {
-  width: 100%;
-  z-index: 2;
-
-  img {
-    width: auto;
-    height: auto;
-    min-width: 100vw;
-  }
+  background-image: url('/assets/home/banner.jpg');
+  background-size: 100%;
+  width: 100vw;
 }
 
 @media screen and (min-width: 960px) {
@@ -90,6 +85,10 @@ h1 {
   }
 }
 
+.cards-container {
+  width: 100vw;
+}
+
 .cards {
   padding: 20px;
 }
@@ -97,20 +96,23 @@ h1 {
 .values-card {
   background-color: mat-color($tathva-app-primary);
   color: $fore-color;
-  max-width: 60vw;
 }
 
-.links-card {
+.links-card,
+.values-card {
   max-width: 60vw;
+  width: 60vw;
 }
 
 @media screen and (min-width: 960px) {
-  .values-card {
-    max-width: 300px;
-  }
-
+  .values-card,
   .links-card {
     max-width: 300px;
-
   }
+}
+
+.links-parallax {
+  background-image: url('/assets/home/banner2.jpg');
+  background-size: 100%;
+  height: auto;
 }

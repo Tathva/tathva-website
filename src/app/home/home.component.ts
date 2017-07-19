@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { Parallax,
+         ParallaxConfig } from 'ng2-parallax/commonjs';
 
 @Component({
   selector: 'app-home',
