@@ -18,7 +18,7 @@
 }
 
 md-sidenav {
-  min-height: 100vh;
+  height: 100%;
   width: 200px;
 }
 
@@ -95,5 +95,22 @@ footer {
 
   a {
     text-decoration: none;
+  }
+}
+
+.logo {
+  background-image: url('/assets/logo_sm.png');
+  background-size: cover;
+  height: 48px;
+  margin-right: 1rem;
+  width: 48px;
+}
+
+.title {
+  color: $fore-color;
+  text-decoration: none;
+
+  h1 {
+    font-size: 1.5rem;
   }
 }

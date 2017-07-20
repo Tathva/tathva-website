@@ -11,10 +11,12 @@
                 <md-icon>menu</md-icon>
             </button>
 
-            <button md-button routerLink="/">
-                <h1><md-icon>home</md-icon> 
-                Tathva International School</h1>
-            </button>
+            <a routerLink="/" fxShow="false" fxShow.gt-sm class="md-small">
+                <div md-card-avatar class="logo mat-elevation-z3"></div>
+            </a>
+            <a routerLink="/" class="md-small" class="title">
+                <h1>Tathva International School</h1>
+            </a>
 
             <span class="fill-remaining-space"></span>
             <div fxLayout="row" fxShow="false" fxShow.gt-sm>
@@ -30,7 +32,7 @@
 
     <div class="site">
 
-        <section >
+        <section>
             <router-outlet></router-outlet>
         </section>
 
