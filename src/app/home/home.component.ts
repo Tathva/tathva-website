@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
-import { Parallax,
-         ParallaxConfig } from 'ng2-parallax/commonjs';
+import { ParallaxConfig } from 'ng2-parallax/commonjs';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +19,17 @@ export class HomeComponent {
     autoplay: 5000,
     autoplayDisableOnInteraction: false
   };
+
+  public paraConf: ParallaxConfig = {
+    ratio: .1,
+    initialValue: -50,
+    maxValue: 50,
+    cssUnit: '%'
+  }
+
+  public cardParaConf: ParallaxConfig = {
+    ratio: .5
+  }
 
   public images = [
     '../assets/carousel/carousel_1.jpg',

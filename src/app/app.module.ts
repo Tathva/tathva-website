@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { Parallax } from 'ng2-parallax/commonjs';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +22,7 @@ import { AppMaterialModule } from './app-material.module';
 @NgModule({
   declarations: [
     AppComponent,
+    Parallax,
     MenuItemComponent,
     SideItemComponent,
     HomeComponent

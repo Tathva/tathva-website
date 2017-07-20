@@ -26,7 +26,7 @@
         </p>
     </div>
 
-    <div parallax class="mat-elevation-z1 parallax" id="parallax-1"></div>
+    <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
 
     <div class="heading-item mat-elevation-z3">
         <h1 class="mat-primary">Our Education</h1>
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div parallax class="mat-elevation-z1 cards-container links-parallax">
+    <div parallax [config]="cardParaConf" class="mat-elevation-z1 cards-container links-parallax">
 
         <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
             <md-card class="links-card" fxLayout="column">
