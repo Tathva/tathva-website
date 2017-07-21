@@ -21,7 +21,7 @@ export class HomeComponent {
   };
 
   public paraConf: ParallaxConfig = {
-    ratio: .1,
+    ratio: .08,
     initialValue: -50,
     maxValue: 50,
     cssUnit: '%'
