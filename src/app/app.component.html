@@ -1,36 +1,36 @@
 <md-sidenav-container>
-    <md-sidenav #sidenav mode="push">
-        <md-nav-list dense (click)="sidenav.close()">
+    <md-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
+        <md-nav-list dense (click)="close(); sidenav.close()">
             <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
         </md-nav-list>
     </md-sidenav>
 
-    <header class="mat-elevation-z3">
-        <md-toolbar color="primary">
-            <button md-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm class="md-small">
+
+    <div class="site" [ngClass]="{'site-no-scroll': isOpen}">
+        <header class="mat-elevation-z3">
+            <md-toolbar color="primary">
+                <button md-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm class="md-small">
                 <md-icon>menu</md-icon>
             </button>
 
-            <a routerLink="/" fxShow="false" fxShow.gt-sm class="md-small">
-                <div md-card-avatar class="logo mat-elevation-z3"></div>
-            </a>
-            <a routerLink="/" class="md-small" class="title">
-                <h1>Tathva International School</h1>
-            </a>
+                <a routerLink="/" fxShow="false" fxShow.gt-sm class="md-small">
+                    <div md-card-avatar class="logo mat-elevation-z3"></div>
+                </a>
+                <a routerLink="/" class="md-small" class="title">
+                    <h1>Tathva International School</h1>
+                </a>
 
-            <span class="fill-remaining-space"></span>
-            <div fxLayout="row" fxShow="false" fxShow.gt-sm>
-                <ul class="navlist">
-                    <li *ngFor="let group of nav_groups">
-                        <app-menu-item [item]="group"></app-menu-item>
-                    </li>
-                </ul>
-            </div>
+                <span class="fill-remaining-space"></span>
+                <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+                    <ul class="navlist">
+                        <li *ngFor="let group of nav_groups">
+                            <app-menu-item [item]="group"></app-menu-item>
+                        </li>
+                    </ul>
+                </div>
 
-        </md-toolbar>
-    </header>
-
-    <div class="site">
+            </md-toolbar>
+        </header>
 
         <section>
             <router-outlet></router-outlet>

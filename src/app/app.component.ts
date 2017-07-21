@@ -92,4 +92,13 @@ export class AppComponent {
     },
   ];
 
+  public isOpen = false;
+
+  public onOpen() {
+    this.isOpen = true;
+  }
+
+  public onClose() {
+    this.isOpen = false;
+  }
 }

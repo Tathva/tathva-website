@@ -72,18 +72,6 @@ h1 {
   width: 100%;
 }
 
-@media screen and (min-width: 960px) {
-  .parallax {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 959px) {
-  .parallax {
-    height: 150px;
-  }
-}
-
 .cards-container {
   width: 100%;
 }
@@ -103,15 +91,29 @@ h1 {
   width: 60vw;
 }
 
+.links-parallax {
+  background-image: url('/assets/home/banner2.jpg');
+  background-size: 33%;
+  height: auto;
+}
+
 @media screen and (min-width: 960px) {
+  .parallax {
+    height: 300px;
+  }
+
   .values-card,
   .links-card {
     max-width: 300px;
   }
 }
 
-.links-parallax {
-  background-image: url('/assets/home/banner2.jpg');
-  background-size: 100%;
-  height: auto;
+@media screen and (max-width: 959px) {
+  .parallax {
+    height: 150px;
+  }
+
+  .links-parallax {
+    background-size: 100%;
+  }
 }
