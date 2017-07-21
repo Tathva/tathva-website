@@ -1,15 +1,30 @@
 @import '../../theme';
 
-
-.swiper-container {
-  height: auto;
-  max-width: 100vw;
-  width: auto;
+.title {
+  align-content: center;
+  // force white for logo
+  background: $fore-color;
+  padding: 1rem;
 
   img {
     height: auto;
-    max-width: 100vw;
+    max-height: 128px;
+    max-width: 100%;
     width: auto;
+  }
+}
+
+.swiper-container {
+  height: auto;
+  max-height: 600px;
+  max-width: 100%;
+  width: 100%;
+
+  img {
+    height: auto;
+    max-height: 768px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -50,19 +65,17 @@ h1 {
   font-size: 1.2em;
   line-height: 1.2em;
   margin: auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
-@media screen and (min-width: 960px) {
+.img-row {
+  margin: auto;
+  padding: 1rem;
+  width: 80%;
 
-  h1 {
-    font-size: 2em;
-  }
-
-  .body-item {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    width: 65vw;
+  img {
+    height: auto;
+    width: auto;
   }
 }
 
@@ -98,6 +111,16 @@ h1 {
 }
 
 @media screen and (min-width: 960px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .body-item {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    width: 65vw;
+  }
+
   .parallax {
     height: 300px;
   }

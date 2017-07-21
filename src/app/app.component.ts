@@ -18,37 +18,20 @@ interface LinkGroup {
 export class AppComponent {
 
   nav_groups: LinkGroup[] = [
-     {
-        title: 'About Us',
-        links: [
-          {
-            url: '/about/vision',
-            name: 'Our Vision'
-          },
-          {
-            url: '/about/team',
-            name: 'Our Team'
-          },
-          {
-            url: '/about/contact',
-            name: 'Contact Us'
-          },
-        ]
-    },
     {
-      title: 'Admissions',
+      title: 'About Us',
       links: [
         {
-          url: '/admissions/pricing',
-          name: 'Pricing & Fees'
+          url: '/about/vision',
+          name: 'Our Vision'
         },
         {
-          url: '/admissions/process',
-          name: 'Our Process'
+          url: '/about/team',
+          name: 'Our Team'
         },
         {
-          url: '/admissions/apply',
-          name: 'Apply for Admission'
+          url: '/about/contact',
+          name: 'Contact Us'
         },
       ]
     },
@@ -90,9 +73,29 @@ export class AppComponent {
         },
       ]
     },
+    {
+      title: 'Admissions',
+      links: [
+        {
+          url: '/admissions/pricing',
+          name: 'Pricing & Fees'
+        },
+        {
+          url: '/admissions/process',
+          name: 'Our Process'
+        },
+        {
+          url: '/admissions/apply',
+          name: 'Apply for Admission'
+        },
+      ]
+    },
   ];
 
   public isOpen = false;
+
+  constructor() {
+  };
 
   public onOpen() {
     this.isOpen = true;

@@ -1,22 +1,23 @@
 <md-sidenav-container>
     <md-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
-        <md-nav-list dense (click)="close(); sidenav.close()">
+        <md-nav-list dense (click)="sidenav.close()">
+            <h3 md-subheader><a routerLink="/home">Home</a></h3>
             <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
         </md-nav-list>
     </md-sidenav>
 
 
-    <div class="site" [ngClass]="{'site-no-scroll': isOpen}">
+    <div [ngClass]="{'site-no-scroll': isOpen}">
         <header class="mat-elevation-z3">
             <md-toolbar color="primary">
                 <button md-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm class="md-small">
-                <md-icon>menu</md-icon>
-            </button>
+                    <md-icon>menu</md-icon>
+                </button>
 
-                <a routerLink="/" fxShow="false" fxShow.gt-sm class="md-small">
+                <a routerLink="/home" fxShow="false" fxShow.gt-sm class="md-small">
                     <div md-card-avatar class="logo mat-elevation-z3"></div>
                 </a>
-                <a routerLink="/" class="md-small" class="title">
+                <a routerLink="/home" class="md-small" class="title">
                     <h1>Tathva International School</h1>
                 </a>
 
@@ -28,44 +29,45 @@
                         </li>
                     </ul>
                 </div>
-
             </md-toolbar>
         </header>
 
-        <section>
-            <router-outlet></router-outlet>
-        </section>
+        <div class="site">
+            <section>
+                <router-outlet></router-outlet>
+            </section>
 
-        <footer>
-            <md-toolbar class="footer" color="primary">
-                <ul class="linklist" fxShow="false" fxShow.gt-sm>
-                    <li *ngFor="let group of nav_groups" class="linkset">
-                        <h3>{{group.title | uppercase}}</h3>
-                        <ul>
-                            <li *ngFor="let link of group.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <span class="fill-remaining-space" fxShow="false" fxShow.gt-sm></span>
-                <md-list dense class="contact-list">
-                    <md-list-item>
-                        <md-icon md-list-icon>phone</md-icon>
-                        <a md-line href="tel:0368089090">03-6808-9090</a>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-icon md-list-icon>mail</md-icon>
-                        <a md-line href="mailto:info@tathva.ed.jp">info@tathva.ed.jp</a>
-                    </md-list-item>
-                    <md-list-item>
-                        <md-icon md-list-icon>pin_drop</md-icon>
-                        <a md-line href="https://goo.gl/fajcss" target="_blank">
+            <footer>
+                <md-toolbar class="footer" color="primary">
+                    <ul class="linklist" fxShow="false" fxShow.gt-sm>
+                        <li *ngFor="let group of nav_groups" class="linkset">
+                            <h3>{{group.title | uppercase}}</h3>
+                            <ul>
+                                <li *ngFor="let link of group.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="fill-remaining-space" fxShow="false" fxShow.gt-sm></span>
+                    <md-list dense class="contact-list">
+                        <md-list-item>
+                            <md-icon md-list-icon>phone</md-icon>
+                            <a md-line href="tel:0368089090">03-6808-9090</a>
+                        </md-list-item>
+                        <md-list-item>
+                            <md-icon md-list-icon>mail</md-icon>
+                            <a md-line href="mailto:info@tathva.ed.jp">info@tathva.ed.jp</a>
+                        </md-list-item>
+                        <md-list-item>
+                            <md-icon md-list-icon>pin_drop</md-icon>
+                            <a md-line href="https://goo.gl/fajcss" target="_blank">
                             4-1-1 Higashi Komatsugawa<br />
                             Edogawa-ku<br />
                             Tokyo 132-0033
                         </a>
-                    </md-list-item>
-                </md-list>
-            </md-toolbar>
-        </footer>
+                        </md-list-item>
+                    </md-list>
+                </md-toolbar>
+            </footer>
+        </div>
     </div>
 </md-sidenav-container>

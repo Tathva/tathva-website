@@ -16,8 +16,8 @@ export class HomeComponent {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     loop: true,
-    autoplay: 5000,
-    autoplayDisableOnInteraction: false
+    autoplay: 3000,
+    autoplayDisableOnInteraction: false,
   };
 
   public paraConf: ParallaxConfig = {
@@ -28,7 +28,7 @@ export class HomeComponent {
   }
 
   public cardParaConf: ParallaxConfig = {
-    ratio: .5
+    ratio: .2
   }
 
   public images = [
