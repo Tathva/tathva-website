@@ -6,6 +6,16 @@
   background: $fore-color;
   padding: 1rem;
 
+  div {
+    h1 {
+      color: $dark;
+    }
+    
+    h4 {
+      color: grey;
+    }
+  }
+
   img {
     height: auto;
     max-height: 128px;
