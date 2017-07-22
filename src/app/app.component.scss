@@ -43,6 +43,10 @@ md-sidenav {
 
 md-toolbar {
 
+  h1 {
+    font-family: $brand-font;
+  }
+
   .navlist {
     list-style-type: none;
 
