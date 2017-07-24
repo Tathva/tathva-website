@@ -1,0 +1,9 @@
+@import 'src/theme';
+
+h1 {
+  &.page-title {
+    border-bottom: 4px solid mat-color($tathva-app-primary);
+    font-family: $brand-font;
+    margin-bottom: 16px;
+  }
+}

@@ -13,7 +13,7 @@ interface LinkGroup {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css', './app.component.scss']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
@@ -36,15 +36,15 @@ export class AppComponent {
       links: [
         {
           url: '/education/kindergarten',
-          name: 'Kindergarten & IPC'
+          name: 'Kindergarten'
         },
         {
-          url: '/education/cambridge',
-          name: 'Cambridge International'
+          url: '/education/primary',
+          name: 'Primary'
         },
         {
-          url: '/education/igcse',
-          name: 'IGCSE'
+          url: '/education/secondary',
+          name: 'Secondary & IGCSE'
         },
       ]
     },

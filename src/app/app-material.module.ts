@@ -5,35 +5,38 @@ import {
     MdButtonModule,
     MdMenuModule,
     MdIconModule,
-    MdCheckboxModule,
     MdToolbarModule,
     MdSidenavModule,
     MdListModule,
-    MdCardModule
+    MdCardModule,
+    MdTabsModule,
+    MdTableModule
 } from '@angular/material';
 
 @NgModule({
     imports: [
         BrowserAnimationsModule,
         MdButtonModule,
-        MdCheckboxModule,
         MdIconModule,
         MdMenuModule,
         MdToolbarModule,
         MdSidenavModule,
         MdListModule,
-        MdCardModule
+        MdCardModule,
+        MdTabsModule,
+        MdTableModule
     ],
     exports: [
         BrowserAnimationsModule,
         MdButtonModule,
-        MdCheckboxModule,
         MdIconModule,
         MdMenuModule,
         MdToolbarModule,
         MdSidenavModule,
         MdListModule,
-        MdCardModule
+        MdCardModule,
+        MdTabsModule,
+        MdTableModule
     ],
 })
 export class AppMaterialModule { }
