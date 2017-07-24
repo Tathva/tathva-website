@@ -13,15 +13,15 @@
       font-size: 3rem;
       font-weight: 500;
     }
-    
+
     h4 {
-      color: grey;
+      color: $grey-font;
       font-size: 1.25rem;
       font-style: italic;
       margin: 0;
     }
 
-    @media screen and (max-width:959px) {
+    @media screen and (max-width: 959px) {
       h1 {
         font-size: 1.5rem;
       }
