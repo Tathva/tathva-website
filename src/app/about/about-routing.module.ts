@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './about.component';
 import { OurTeamComponent } from './our-team/our-team.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { OurVisionComponent } from './our-vision/our-vision.component';
 
 const aboutRoutes: Routes = [
@@ -19,10 +18,6 @@ const aboutRoutes: Routes = [
                 path: 'team',
                 component: OurTeamComponent
             },
-            {
-                path: 'contact',
-                component: ContactUsComponent
-            }
         ]
     }
 ];

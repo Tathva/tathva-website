@@ -8,7 +8,6 @@ import { AboutComponent } from './about.component';
 import { AboutRoutingModule } from './about-routing.module';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { OurVisionComponent } from './our-vision/our-vision.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   imports: [
@@ -17,10 +16,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AppMaterialModule,
     AboutRoutingModule
   ],
-  declarations: [AboutComponent,
+  declarations: [
+    AboutComponent,
     OurTeamComponent,
-    OurVisionComponent,
-    ContactUsComponent
+    OurVisionComponent
 ]
 })
 export class AboutModule { }

@@ -1,0 +1,47 @@
+@import 'src/theme';
+
+.linklist {
+  list-style-type: none;
+  padding-top: 20px;
+  text-align: right;
+  width: 200px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  ul > li {
+    display: list-item;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  li > ul {
+    padding-left: 0;
+  }
+
+  a {
+    color: $dark;
+    text-decoration: none;
+
+    &.active {
+      color: mat-color($tathva-app-primary);
+    }
+
+    &:hover {
+      color: mat-color($tathva-app-accent);
+    }
+  }
+
+  .linkset {
+    border-right: 1px solid mat-color($tathva-app-primary);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+
+.content {
+  padding: 20px;
+}

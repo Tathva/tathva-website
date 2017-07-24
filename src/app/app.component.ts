@@ -29,10 +29,6 @@ export class AppComponent {
           url: '/about/team',
           name: 'Our Team'
         },
-        {
-          url: '/about/contact',
-          name: 'Contact Us'
-        },
       ]
     },
     {
@@ -49,6 +45,23 @@ export class AppComponent {
         {
           url: '/education/igcse',
           name: 'IGCSE'
+        },
+      ]
+    },
+    {
+      title: 'Admissions',
+      links: [
+        {
+          url: '/admissions/pricing',
+          name: 'Pricing & Fees'
+        },
+        {
+          url: '/admissions/process',
+          name: 'Our Process'
+        },
+        {
+          url: '/admissions/apply',
+          name: 'Apply for Admission'
         },
       ]
     },
@@ -74,22 +87,18 @@ export class AppComponent {
       ]
     },
     {
-      title: 'Admissions',
+      title: 'Contact',
       links: [
         {
-          url: '/admissions/pricing',
-          name: 'Pricing & Fees'
+          url: '/contact/contact-us',
+          name: 'Contact & Access'
         },
         {
-          url: '/admissions/process',
-          name: 'Our Process'
-        },
-        {
-          url: '/admissions/apply',
-          name: 'Apply for Admission'
+          url: '/contact/employment',
+          name: 'Employment'
         },
       ]
-    },
+    }
   ];
 
   public isOpen = false;
