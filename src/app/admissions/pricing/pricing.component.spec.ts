@@ -3,6 +3,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
+import { AppMaterialModule } from './../../app-material.module';
+
 import { PricingComponent } from './pricing.component';
 
 describe('PricingComponent', () => {
@@ -11,7 +13,8 @@ describe('PricingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PricingComponent ]
+      declarations: [ PricingComponent ],
+      imports: [AppMaterialModule]
     })
     .compileComponents();
   }));
