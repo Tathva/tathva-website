@@ -1,0 +1,31 @@
+@import 'src/theme';
+
+.address-card {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.address-img {
+  height: 200px;
+}
+
+.mail-card {
+  max-width: 250px;
+  min-width: 250px;
+}
+
+@media screen and (max-width: 1023px) {
+  .address-card,
+  .mail-card {
+    max-width: 85vw;
+    width: 85vw;
+  }
+}
+
+a {
+  color: mat-color($tathva-app-primary);
+
+  &:hover {
+    color: mat-color($tathva-app-accent);
+  }
+}

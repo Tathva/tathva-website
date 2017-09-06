@@ -6,4 +6,12 @@ h1 {
     font-family: $brand-font;
     margin-bottom: 16px;
   }
+
+  &.content-title {
+    border-bottom: 1px solid mat-color($tathva-app-primary);
+  }
+}
+
+.section {
+  margin-bottom: 16px;
 }
