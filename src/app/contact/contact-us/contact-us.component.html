@@ -1,7 +1,7 @@
 <h1 class="mat-display-1 page-title">Contact & Access</h1>
 
 <h1 class="content-title">Find Us</h1>
-<div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="space-around center" fxLayoutGap="1rem" class="section">
+<div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around center" fxLayoutGap="1rem">
     <md-card class="address-card mat-elevation-z4">
         <md-card-title-group>
             <md-card-title>Kindergarten, Grades 1 - 4</md-card-title>
@@ -46,22 +46,24 @@
         </md-card-content>
     </md-card>
 </div>
-
 <h1 class="content-title">Email Us</h1>
 <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="space-around center" fxLayoutGap="1rem">
-    <md-card class="mail-card mat-elevation-z4">
+    <md-card class="mail-card"
+    [ngClass]="elevationAdmissions" (mouseover)="elevationAdmissions='mat-elevation-z7'" (mouseout)="elevationAdmissions='mat-elevation-z4'">
         <md-card-title class="title">For Admissions</md-card-title>
         <md-card-content>
             <a href="mailto:admissions@tathva.ed.jp">admissions@tathva.ed.jp</a>
         </md-card-content>
     </md-card>
-    <md-card class="mail-card mat-elevation-z4">
+    <md-card class="mail-card"
+    [ngClass]="elevationInfo" (mouseover)="elevationInfo='mat-elevation-z7'" (mouseout)="elevationInfo='mat-elevation-z4'">
         <md-card-title class="title">For Inquiries</md-card-title>
         <md-card-content>
             <a href="mailto:info@tathva.ed.jp">info@tathva.ed.jp</a>
         </md-card-content>
     </md-card>
-    <md-card class="mail-card mat-elevation-z4">
+    <md-card class="mail-card"
+    [ngClass]="elevationJob" (mouseover)="elevationJob='mat-elevation-z7'" (mouseout)="elevationJob='mat-elevation-z4'">
         <md-card-title class="title">For Jobs</md-card-title>
         <md-card-content>
             <a href="mailto:hr@tathva.ed.jp">hr@tathva.ed.jp</a>
