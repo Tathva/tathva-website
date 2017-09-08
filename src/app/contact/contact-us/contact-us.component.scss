@@ -21,11 +21,3 @@
     width: 85vw;
   }
 }
-
-a {
-  color: mat-color($tathva-app-primary);
-
-  &:hover {
-    color: mat-color($tathva-app-accent);
-  }
-}

@@ -16,3 +16,12 @@ h1 {
 .section {
   margin-bottom: 16px;
 }
+
+
+a {
+  color: mat-color($tathva-app-primary);
+
+  &:hover {
+    color: mat-color($tathva-app-accent);
+  }
+}
