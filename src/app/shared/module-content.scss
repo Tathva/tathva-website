@@ -24,4 +24,9 @@ a {
   &:hover {
     color: mat-color($tathva-app-accent);
   }
+
+  &.button {
+    color: inherit;
+    text-decoration: none;
+  }
 }

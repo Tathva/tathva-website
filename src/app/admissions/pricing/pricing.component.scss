@@ -1,18 +1,19 @@
 @import '../../../theme';
 
 .fee-table {
-    width: 100%;
-    max-width: 768px;
+  max-width: 768px;
+  width: 100%;
 }
 
 .tbl-container {
-    width: 95%;
-    max-width: 95%;
+  max-width: 95%;
+  width: 95%;
 }
 
 @media screen and (max-width: 768px) {
   .tbl-container {
     max-width: 95vw;
+    width: 95vw;
     overflow-x: auto;
   }
 }

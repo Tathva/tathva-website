@@ -140,4 +140,11 @@ footer {
   h1 {
     font-size: 1.5rem;
   }
+
+  // Scale down the title on particular small screens
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6vw;
+    }
+  }
 }
