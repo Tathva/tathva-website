@@ -1,5 +1,14 @@
 @import 'src/theme';
 
+.swipe-container {
+  position: absolute;
+  width: 16px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .mat-button {
   &.md-small {
     min-width: 1%;

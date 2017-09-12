@@ -1,4 +1,6 @@
-<md-sidenav-container>
+<md-sidenav-container (swipeleft)="sidenav.close()">
+    <div fxHide="false" fxHide.gt-sm class="swipe-container" (swiperight)="sidenav.open()"></div>
+
     <md-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
         <md-nav-list dense (click)="sidenav.close()">
             <h3 md-subheader><a routerLink="/home">Home</a></h3>
