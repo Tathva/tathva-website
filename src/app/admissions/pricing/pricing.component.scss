@@ -1,0 +1,26 @@
+@import '../../../theme';
+
+.fee-table {
+    width: 100%;
+    max-width: 768px;
+}
+
+.tbl-container {
+    width: 95%;
+    max-width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+  .tbl-container {
+    max-width: 95vw;
+    overflow-x: auto;
+  }
+}
+
+.sub-table-section {
+  background-color: mat-color($tathva-app-accent, 100);
+}
+
+.sub-table-total {
+  background-color: mat-color($tathva-app-primary, 100);
+}
