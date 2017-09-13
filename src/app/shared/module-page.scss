@@ -1,10 +1,12 @@
 @import 'src/theme';
 
+$linklist-width: 200px;
+
 .linklist {
   list-style-type: none;
   padding-top: 20px;
   text-align: right;
-  width: 200px;
+  width: $linklist-width;
 
   li {
     display: inline-block;
@@ -43,5 +45,14 @@
 
 .content {
   margin: 20px;
-  max-width: 1080px;
+  max-width: $screen-md;
 }
+
+@media screen and (max-width: $screen-md) {
+  .content {
+    max-width: 95%;
+    width: 95%;
+    overflow-x: hidden; // To stop odd resizing from tables
+  }
+}
+

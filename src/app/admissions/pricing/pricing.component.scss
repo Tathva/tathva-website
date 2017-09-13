@@ -10,12 +10,13 @@
   width: 95%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $screen-md) {
   .tbl-container {
     max-width: 95vw;
-    width: 95vw;
+    width: 95%;
     overflow-x: auto;
   }
+
 }
 
 .sub-table-section {

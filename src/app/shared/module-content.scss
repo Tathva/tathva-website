@@ -1,5 +1,10 @@
 @import 'src/theme';
 
+.page {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   &.page-title {
     border-bottom: 4px solid mat-color($tathva-app-primary);

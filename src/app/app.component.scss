@@ -23,6 +23,7 @@
 .site {
   display: flex;
   flex-direction: column;
+  max-width: 100vw;
   min-height: calc(100vh - 64px);
 }
 
@@ -150,8 +151,14 @@ footer {
     font-size: 1.5rem;
   }
 
-  // Scale down the title on particular small screens
-  @media screen and (max-width: 768px) {
+  // Scale down the title per screen size
+  @media screen and (max-width: $screen-md) {
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: $screen-ss) {
     h1 {
       font-size: 6vw;
     }
