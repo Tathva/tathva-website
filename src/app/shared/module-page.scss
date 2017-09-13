@@ -46,6 +46,7 @@ $linklist-width: 200px;
 .content {
   margin: 20px;
   max-width: $screen-md;
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: $screen-md) {
