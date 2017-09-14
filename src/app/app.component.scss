@@ -26,18 +26,38 @@
   min-height: calc(100vh - 64px);
 }
 
-.site-no-scroll {
+.site-container {
   height: 100%;
 }
 
 md-sidenav-container {
-  height: 100%;
-  overflow-y: overlay;
+  position: relative;
+  bottom: 0;
+  top: 64px;
+}
+
+.open-nav {
+  height: calc(100% - 64px);
 }
 
 md-sidenav {
-  height: 100vh;
+  height: 100%;
   width: 200px;
+}
+
+// For shrinking toolbar on mobile
+@media (max-width: 600px) {
+  .site {
+    min-height: calc(100vh - 56px);
+  }
+
+  .open-nav {
+  height: calc(100% - 56px);
+  }
+
+  md-sidenav-container {
+    top: 56px;
+  }
 }
 
 .mat-nav-list {
@@ -52,6 +72,12 @@ md-sidenav {
       outline: 0;
     }
   }
+}
+
+.header-bar {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
 
 md-toolbar {

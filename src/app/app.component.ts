@@ -113,4 +113,8 @@ export class AppComponent {
   public onClose() {
     this.isOpen = false;
   }
+
+  public isScrolled() {
+    return document.body.scrollTop > 0;
+  }
 }
