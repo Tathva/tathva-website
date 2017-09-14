@@ -10,7 +10,7 @@ import {
     MdListModule,
     MdCardModule,
     MdTabsModule,
-    MdTableModule
+    MdExpansionModule
 } from '@angular/material';
 
 @NgModule({
@@ -24,7 +24,7 @@ import {
         MdListModule,
         MdCardModule,
         MdTabsModule,
-        MdTableModule
+        MdExpansionModule
     ],
     exports: [
         BrowserAnimationsModule,
@@ -36,7 +36,7 @@ import {
         MdListModule,
         MdCardModule,
         MdTabsModule,
-        MdTableModule
+        MdExpansionModule
     ],
 })
 export class AppMaterialModule { }

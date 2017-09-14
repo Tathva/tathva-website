@@ -1,15 +1,13 @@
+<div fxHide="false" fxHide.gt-sm class="swipe-container" (swiperight)="sidenav.open()"></div>
 <md-sidenav-container (swipeleft)="sidenav.close()">
-    <div fxHide="false" fxHide.gt-sm class="swipe-container" (swiperight)="sidenav.open()"></div>
-
     <md-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
-        <md-nav-list dense (click)="sidenav.close()">
+        <md-nav-list dense (click)="sidenav.close()" class="scroll-content">
             <h3 md-subheader><a routerLink="/home">Home</a></h3>
             <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
         </md-nav-list>
     </md-sidenav>
 
-
-    <div [ngClass]="{'site-no-scroll': isOpen}">
+    <div class="site-no-scroll">
         <header class="mat-elevation-z3">
             <md-toolbar color="primary">
                 <button md-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm class="md-small">

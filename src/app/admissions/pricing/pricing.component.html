@@ -1,4 +1,4 @@
-<h1 class="mat-display-1 page-title">Pricing and Fees</h1>
+<h1 class="mat-display-1 page-title">Pricing and Placement</h1>
 
 <p>
   For full pricing information, including our school bus system and monthly or termwise payment options, please refer to our
@@ -10,379 +10,518 @@
   </a>
 </p>
 
-<md-tab-group class="mat-typography">
+<md-accordion>
 
-  <md-tab label="Kindergarten">
-    <br />
+  <md-expansion-panel [expanded]="true">
+    <md-expansion-panel-header>
+      <md-panel-title><strong>Pricing & Fees</strong></md-panel-title>
+    </md-expansion-panel-header>
+    <md-tab-group class="mat-typography">
+
+      <md-tab label="Kindergarten">
+        <br />
+        <div class="tbl-container" fxLayoutAlign="space-around center">
+          <table class="mdl-data-table mdl-shadow--2dp fee-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>KG1 - Cubs</th>
+                <th>KG2 - Pandas</th>
+                <th>KG3 - Dolphins</th>
+              </tr>
+            </thead>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="4">One-Time Fees</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Admissions Application<br />
+                  <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
+                </td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="4">Annual Fees
+                  <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
+                </th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
+                <td>¥612,000</td>
+                <td>¥612,000</td>
+                <td>¥612,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Books</td>
+                <td>¥9,600</td>
+                <td>¥12,820</td>
+                <td>¥21,820</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Miscellaneous<br />
+                  <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
+                </td>
+                <td>¥21,800</td>
+                <td>¥21,800</td>
+                <td>¥24,700</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-total">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">
+                  Total in Yen
+                  <span class="mat-caption"><i>before tax</i></span>
+                </th>
+                <th>¥749,900</th>
+                <th>¥753,120</th>
+                <th>¥765,020</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+      </md-tab>
+
+      <md-tab label="Primary">
+        <br />
+        <div class="tbl-container" fxLayoutAlign="space-around center">
+          <table class="mdl-data-table mdl-shadow--2dp fee-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Grade 1</th>
+                <th>Grade 2</th>
+                <th>Grade 3</th>
+                <th>Grade 4</th>
+                <th>Grade 5</th>
+              </tr>
+            </thead>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="6">One-Time Fees</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Admissions Application<br />
+                  <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
+                </td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="6">Annual Fees
+                  <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
+                </th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
+                <td>¥645,000</td>
+                <td>¥645,000</td>
+                <td>¥645,000</td>
+                <td>¥645,000</td>
+                <td>¥645,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Books<br />
+                  <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
+                </td>
+                <td>*¥37,870</td>
+                <td>*¥39,470</td>
+                <td>*¥39,570</td>
+                <td>*¥38,260</td>
+                <td>*¥36,560</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Miscellaneous<br />
+                  <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
+                </td>
+                <td>¥30,300</td>
+                <td>¥30,300</td>
+                <td>¥30,300</td>
+                <td>¥30,500</td>
+                <td>¥31,300</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-total">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">
+                  Total in Yen
+                  <span class="mat-caption"><i>before tax</i></span>
+                </th>
+                <th>¥819,670</th>
+                <th>¥821,270</th>
+                <th>¥821,370</th>
+                <th>¥820,260</th>
+                <th>¥819,360</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+
+      </md-tab>
+
+      <md-tab label="Secondary">
+        <br />
+        <div class="tbl-container" fxLayoutAlign="space-around center">
+          <table class="mdl-data-table mdl-shadow--2dp fee-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Grade 6</th>
+                <th>Grade 7</th>
+                <th>Grade 8</th>
+              </tr>
+            </thead>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="4">One-Time Fees</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Admissions Application<br />
+                  <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
+                </td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="4">Annual Fees
+                  <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
+                </th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
+                <td>¥696,000</td>
+                <td>¥696,000</td>
+                <td>¥696,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Books<br />
+                  <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
+                </td>
+                <td>*¥47,960</td>
+                <td>*¥42,760</td>
+                <td>*¥43,460</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Miscellaneous<br />
+                  <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
+                </td>
+                <td>¥29,400</td>
+                <td>¥29,400</td>
+                <td>¥29,400</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-total">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">
+                  Total in Yen
+                  <span class="mat-caption"><i>before tax</i></span>
+                </th>
+                <th>¥879,860</th>
+                <th>¥874,660</th>
+                <th>¥875,360</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+      </md-tab>
+
+      <md-tab label="IGCSE">
+        <br />
+        <div class="tbl-container" fxLayoutAlign="space-around center">
+          <table class="mdl-data-table mdl-shadow--2dp fee-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Grade 9</th>
+                <th>Grade 10</th>
+              </tr>
+            </thead>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="3">One-Time Fees</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Admissions Application<br />
+                  <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
+                </td>
+                <td>¥6,500</td>
+                <td>¥6,500</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
+                <td>¥60,000</td>
+                <td>¥60,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
+                <td>¥40,000</td>
+                <td>¥40,000</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-section">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" colspan="3">Annual Fees
+                  <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
+                </th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
+                <td>¥870,000</td>
+                <td>¥870,000</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Books<br />
+                  <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
+                </td>
+                <td>*¥66,420</td>
+                <td>*¥66,420</td>
+              </tr>
+              <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                  Miscellaneous<br />
+                  <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
+                </td>
+                <td>¥29,800</td>
+                <td>¥29,800</td>
+              </tr>
+            </tbody>
+
+            <tbody class="sub-table-total">
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">
+                  Total in Yen
+                  <span class="mat-caption"><i>before tax</i></span>
+                </th>
+                <th>¥1,072,720</th>
+                <th>¥1,072,720</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+      </md-tab>
+    </md-tab-group>
+  </md-expansion-panel>
+
+  <md-expansion-panel>
+    <md-expansion-panel-header><strong>Class Placement</strong></md-expansion-panel-header>
+    <p>Placement in all grades is strictly determined by the table below.</p>
+
     <div class="tbl-container" fxLayoutAlign="space-around center">
-      <table class="mdl-data-table mdl-shadow--2dp fee-table">
+      <table class="mdl-data-table mdl-shadow--2dp grade-table">
         <thead>
           <tr>
-            <th></th>
-            <th>KG1 - Cubs</th>
-            <th>KG2 - Pandas</th>
-            <th>KG3 - Dolphins</th>
+            <th style="text-align: center;" colspan="6">
+              <h2>GRADE ELIGIBILITY CHART (2017 – 2018)</h2>
+            </th>
+          </tr>
+          <tr>
+            <th class="mdl-data-table__cell--non-numeric">School Levels</th>
+            <th class="mdl-data-table__cell--non-numeric">Date of Birth</th>
+            <th class="mdl-data-table__cell--non-numeric">Tathva grade</th>
+            <th class="mdl-data-table__cell--non-numeric">US grade</th>
+            <th class="mdl-data-table__cell--non-numeric">UK grade</th>
           </tr>
         </thead>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="4">One-Time Fees</th>
-          </tr>
-        </tbody>
         <tbody>
           <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Admissions Application<br />
-              <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
-            </td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
+            <td class="mdl-data-table__cell--non-numeric">Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2013-March 31, 2014<br>Must be 3 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Cubs</td>
+            <td class="mdl-data-table__cell--non-numeric">3 Year Old Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">Nursery</td>
           </tr>
           <tr>
-            <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
+            <td class="mdl-data-table__cell--non-numeric">Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2012-March 31, 2013<br>Must be 4 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Panda</td>
+            <td class="mdl-data-table__cell--non-numeric">4 Year Old Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">Reception</td>
           </tr>
           <tr>
-            <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="4">Annual Fees
-              <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
-            </th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
-            <td>¥612,000</td>
-            <td>¥612,000</td>
-            <td>¥612,000</td>
+            <td class="mdl-data-table__cell--non-numeric">Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2011-March 31, 2012<br>Must be 5 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Dolphins</td>
+            <td class="mdl-data-table__cell--non-numeric">5 Year Old Kindergarten</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 1</td>
           </tr>
           <tr>
-            <td class="mdl-data-table__cell--non-numeric">Books</td>
-            <td>¥9,600</td>
-            <td>¥12,820</td>
-            <td>¥21,820</td>
+            <td class="mdl-data-table__cell--non-numeric">Primary</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2010-March 31, 2011<br>Must be 6 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 1</td>
+            <td class="mdl-data-table__cell--non-numeric">PYP 1/ Grade 1</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 2</td>
           </tr>
           <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Miscellaneous<br />
-              <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
-            </td>
-            <td>¥21,800</td>
-            <td>¥21,800</td>
-            <td>¥24,700</td>
+            <td class="mdl-data-table__cell--non-numeric">Primary</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2009-March 31, 2010<br>Must be 7 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 2</td>
+            <td class="mdl-data-table__cell--non-numeric">PYP 2/ Grade 2</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 3</td>
           </tr>
-        </tbody>
-
-        <tbody class="sub-table-total">
           <tr>
-            <th class="mdl-data-table__cell--non-numeric">
-              Total in Yen
-              <span class="mat-caption"><i>before tax</i></span>
-            </th>
-            <th>¥749,900</th>
-            <th>¥753,120</th>
-            <th>¥765,020</th>
+            <td class="mdl-data-table__cell--non-numeric">Primary</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2008-March 31, 2009<br>Must be 8 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 3</td>
+            <td class="mdl-data-table__cell--non-numeric">PYP 3/ Grade 3</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 4</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">Primary</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2007-March 31, 2008<br>Must be 9 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 4</td>
+            <td class="mdl-data-table__cell--non-numeric">PYP 4/ Grade 4</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 5</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">Primary</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2006-March 31, 2007<br>Must be 10 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 5</td>
+            <td class="mdl-data-table__cell--non-numeric">PYP 5/ Grade 5</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 6</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">Secondary 1</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2005-March 31, 2006<br>Must be 11 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 6</td>
+            <td class="mdl-data-table__cell--non-numeric">MYP 1/ Grade 6</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 7</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">Secondary 1</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2004-March 31, 2005<br>Must be 12 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 7</td>
+            <td class="mdl-data-table__cell--non-numeric">MYP 2/ Grade 7</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 8</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">Secondary 1</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2003-March 31, 2004<br>Must be 13 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 8</td>
+            <td class="mdl-data-table__cell--non-numeric">MYP 3/ Grade 8</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 9</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">IGCSE</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2002-March 31, 2003<br>Must be 14 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 9</td>
+            <td class="mdl-data-table__cell--non-numeric">MYP 4/ Grade 9</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 10</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">IGCSE</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2001-March 31, 2002<br>Must be 15 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 10</td>
+            <td class="mdl-data-table__cell--non-numeric">MYP 5/ Grade 10</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 11</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">AS-Levels</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 2000-March 31, 2001<br>Must be 16 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 11</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 11</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 12</td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">A-Levels</td>
+            <td class="mdl-data-table__cell--non-numeric">April 1, 1999-March 31, 2000<br>Must be 17 years old before April 1, 2017</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 12</td>
+            <td class="mdl-data-table__cell--non-numeric">Grade 12</td>
+            <td class="mdl-data-table__cell--non-numeric">Year 13</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <br />
-  </md-tab>
-
-  <md-tab label="Primary">
-    <br />
-    <div class="tbl-container" fxLayoutAlign="space-around center">
-      <table class="mdl-data-table mdl-shadow--2dp fee-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Grade 1</th>
-            <th>Grade 2</th>
-            <th>Grade 3</th>
-            <th>Grade 4</th>
-            <th>Grade 5</th>
-          </tr>
-        </thead>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="6">One-Time Fees</th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Admissions Application<br />
-              <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
-            </td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="6">Annual Fees
-              <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
-            </th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
-            <td>¥645,000</td>
-            <td>¥645,000</td>
-            <td>¥645,000</td>
-            <td>¥645,000</td>
-            <td>¥645,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Books<br />
-              <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
-            </td>
-            <td>*¥37,870</td>
-            <td>*¥39,470</td>
-            <td>*¥39,570</td>
-            <td>*¥38,260</td>
-            <td>*¥36,560</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Miscellaneous<br />
-              <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
-            </td>
-            <td>¥30,300</td>
-            <td>¥30,300</td>
-            <td>¥30,300</td>
-            <td>¥30,500</td>
-            <td>¥31,300</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-total">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric">
-              Total in Yen
-              <span class="mat-caption"><i>before tax</i></span>
-            </th>
-            <th>¥819,670</th>
-            <th>¥821,270</th>
-            <th>¥821,370</th>
-            <th>¥820,260</th>
-            <th>¥819,360</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <br />
-
-  </md-tab>
-
-  <md-tab label="Secondary">
-    <br />
-    <div class="tbl-container" fxLayoutAlign="space-around center">
-      <table class="mdl-data-table mdl-shadow--2dp fee-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Grade 6</th>
-            <th>Grade 7</th>
-            <th>Grade 8</th>
-          </tr>
-        </thead>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="4">One-Time Fees</th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Admissions Application<br />
-              <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
-            </td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="4">Annual Fees
-              <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
-            </th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
-            <td>¥696,000</td>
-            <td>¥696,000</td>
-            <td>¥696,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Books<br />
-              <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
-            </td>
-            <td>*¥47,960</td>
-            <td>*¥42,760</td>
-            <td>*¥43,460</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Miscellaneous<br />
-              <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
-            </td>
-            <td>¥29,400</td>
-            <td>¥29,400</td>
-            <td>¥29,400</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-total">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric">
-              Total in Yen
-              <span class="mat-caption"><i>before tax</i></span>
-            </th>
-            <th>¥879,860</th>
-            <th>¥874,660</th>
-            <th>¥875,360</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <br />
-  </md-tab>
-
-  <md-tab label="IGCSE">
-    <br />
-    <div class="tbl-container" fxLayoutAlign="space-around center">
-      <table class="mdl-data-table mdl-shadow--2dp fee-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Grade 9</th>
-            <th>Grade 10</th>
-          </tr>
-        </thead>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="3">One-Time Fees</th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Admissions Application<br />
-              <span class="mat-caption"><i>Paid during admin inquiry process</i></span>
-            </td>
-            <td>¥6,500</td>
-            <td>¥6,500</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Building Fee</td>
-            <td>¥60,000</td>
-            <td>¥60,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Registration Fee</td>
-            <td>¥40,000</td>
-            <td>¥40,000</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-section">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric" colspan="3">Annual Fees
-              <span class="mat-caption"><i>Tuition & Miscellaneous paid in installments as applicable.</i></span>
-            </th>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Tuition Fee</td>
-            <td>¥870,000</td>
-            <td>¥870,000</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Books<br />
-              <span class="mat-caption"><i>Will change depending on choice of Second Language lessons</i></span>
-            </td>
-            <td>*¥66,420</td>
-            <td>*¥66,420</td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-              Miscellaneous<br />
-              <span class="mat-caption"><i>Activities & Events, e-Learning, Insurance.</i></span>
-            </td>
-            <td>¥29,800</td>
-            <td>¥29,800</td>
-          </tr>
-        </tbody>
-
-        <tbody class="sub-table-total">
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric">
-              Total in Yen
-              <span class="mat-caption"><i>before tax</i></span>
-            </th>
-            <th>¥1,072,720</th>
-            <th>¥1,072,720</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <br />
-  </md-tab>
-</md-tab-group>
+  </md-expansion-panel>
+</md-accordion>

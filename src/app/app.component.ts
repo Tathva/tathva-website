@@ -53,7 +53,7 @@ export class AppComponent {
       links: [
         {
           url: '/admissions/pricing',
-          name: 'Pricing & Fees'
+          name: 'Pricing & Placement'
         },
         {
           url: '/admissions/process',
