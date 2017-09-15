@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+  public elevationAdmissions: string;
+  public elevationInfo: string;
+  public elevationJob: string;
+
   constructor() { }
+
 
   ngOnInit() {
   }

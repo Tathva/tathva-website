@@ -102,19 +102,18 @@ export class AppComponent {
   ];
 
   public isOpen = false;
+  public menuIcon = 'menu';
 
   constructor() {
   };
 
   public onOpen() {
     this.isOpen = true;
+    this.menuIcon = 'close';
   }
 
   public onClose() {
     this.isOpen = false;
-  }
-
-  public isScrolled() {
-    return document.body.scrollTop > 0;
+    this.menuIcon = 'menu';
   }
 }
