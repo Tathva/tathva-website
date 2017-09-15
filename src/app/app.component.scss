@@ -23,8 +23,8 @@
 }
 
 md-sidenav-container {
-  position: relative;
   bottom: 0;
+  position: relative;
   top: 64px;
 }
 
@@ -44,7 +44,7 @@ md-sidenav {
   }
 
   .open-nav {
-  height: calc(100% - 56px);
+    height: calc(100% - 56px);
   }
 
   md-sidenav-container {

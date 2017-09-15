@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Parallax } from './app-parallax-wrapper.directive';
+import { ParallaxDirective } from './app-parallax-wrapper.directive';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [Parallax],
-  exports: [Parallax]
+  declarations: [ParallaxDirective],
+  exports: [ParallaxDirective]
 })
 export class ParallaxModule { }
