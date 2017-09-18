@@ -5,8 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
-// import { Parallax, ParallaxConfig  } from 'ngx-parallax';
-import { ParallaxModule } from './shared/app-parallax-wrapper/app-parallax-wrapper.module';
+import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -34,7 +33,7 @@ import { ContactModule } from './contact/contact.module';
     AppMaterialModule,
     FlexLayoutModule,
     SwiperModule,
-    ParallaxModule,
+    ParallaxScrollModule,
     AboutModule,
     AdmissionsModule,
     ContactModule,

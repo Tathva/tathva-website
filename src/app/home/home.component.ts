@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
-import { ParallaxConfig } from 'ng2-parallax/commonjs';
+import { IParallaxScrollConfig } from 'ng2-parallaxscroll';
 
 @Component({
   selector: 'app-home',
@@ -20,15 +20,15 @@ export class HomeComponent {
     autoplayDisableOnInteraction: false,
   };
 
-  public paraConf: ParallaxConfig = {
-    ratio: .08,
+  public paraConf: IParallaxScrollConfig = {
+    speed: .08,
     initialValue: -50,
     maxValue: 50,
     cssUnit: '%'
   }
 
-  public cardParaConf: ParallaxConfig = {
-    ratio: .2
+  public cardParaConf: IParallaxScrollConfig = {
+    speed: .2
   }
 
   public images = [
