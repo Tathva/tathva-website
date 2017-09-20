@@ -7,7 +7,7 @@ import { OurVisionComponent } from './our-vision/our-vision.component';
 
 const aboutRoutes: Routes = [
     {
-        path: 'about',
+        path: '',
         component: AboutComponent,
         children: [
             {

@@ -7,7 +7,7 @@ import { EmploymentComponent } from './employment/employment.component';
 
 const routes: Routes = [
   {
-    path: 'contact',
+    path: '',
     component: ContactComponent,
     children: [
       {

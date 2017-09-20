@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
+    { path: 'admissions', loadChildren: 'app/admissions/admissions.module#AdmissionsModule' },
+    { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
     { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 

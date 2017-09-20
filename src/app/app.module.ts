@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -14,9 +15,6 @@ import { SideItemComponent } from './side-item.component';
 
 import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
-import { AboutModule } from './about/about.module';
-import { AdmissionsModule } from './admissions/admissions.module';
-import { ContactModule } from './contact/contact.module';
 
 
 
@@ -30,13 +28,11 @@ import { ContactModule } from './contact/contact.module';
 ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppMaterialModule,
     FlexLayoutModule,
     SwiperModule,
     ParallaxScrollModule,
-    AboutModule,
-    AdmissionsModule,
-    ContactModule,
     AppRoutingModule,
   ],
   providers: [],
