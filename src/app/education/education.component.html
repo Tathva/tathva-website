@@ -1,3 +1,20 @@
-<p>
-  education works!
-</p>
+<div class="mat-typography" fxLayout="row" fxLayoutAlign="center start">
+  
+    <div class="sidelinks" fxShow="false" fxShow.gt-sm>
+      <ul class="linklist">
+        <li class="linkset">
+          <h4>EDUCATION</h4>
+          <ul>
+            <li><a routerLink="kindergarten" routerLinkActive="active">Kindergarten</a></li>
+            <li><a routerLink="primary" routerLinkActive="active">Primary</a></li>
+            <li><a routerLink="secondary" routerLinkActive="active">Secondary & IGCSE</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="content" fxFlex>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </div>

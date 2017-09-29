@@ -9,6 +9,7 @@ const routes: Routes = [
     { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
     { path: 'admissions', loadChildren: 'app/admissions/admissions.module#AdmissionsModule' },
     { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
+    { path: 'education', loadChildren: 'app/education/education.module#EducationModule' },
     { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 

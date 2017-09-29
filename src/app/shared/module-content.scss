@@ -5,6 +5,19 @@
   overflow-x: hidden;
 }
 
+.banner {
+  height: auto;
+  max-width: $screen-md;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.article-img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
 h1 {
   &.page-title {
     border-bottom: 4px solid mat-color($tathva-app-primary);
