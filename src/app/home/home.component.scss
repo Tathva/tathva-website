@@ -96,13 +96,6 @@ h1 {
   padding-top: 10px;
 }
 
-.body-item {
-  font-size: 1.2em;
-  line-height: 1.2em;
-  margin: auto;
-  padding: 1rem;
-}
-
 .img-row {
   margin: auto;
   padding: 1rem;
@@ -148,12 +141,6 @@ h1 {
 @media screen and (min-width: $screen-sm) {
   h1 {
     font-size: 2em;
-  }
-
-  .body-item {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    width: 65vw;
   }
 
   .parallax {
