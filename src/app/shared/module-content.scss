@@ -31,6 +31,11 @@ h1 {
   }
 }
 
+span {
+  &.panel-title {
+    color: mat-color($tathva-app-primary);
+  }
+}
 .section {
   margin-bottom: 16px;
 }
