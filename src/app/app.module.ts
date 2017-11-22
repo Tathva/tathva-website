@@ -13,8 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { MenuItemComponent } from './menu-item.component';
 import { SideItemComponent } from './side-item.component';
 
+import { SharedModule } from './shared/shared.module';
 import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { CalendarService } from './services/calendar.service';
 
 
 
@@ -33,9 +35,10 @@ import { AppRoutingModule } from './app-routing.module';
     FlexLayoutModule,
     SwiperModule,
     ParallaxScrollModule,
+    SharedModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [CalendarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

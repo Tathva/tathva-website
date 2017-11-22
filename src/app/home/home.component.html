@@ -34,24 +34,14 @@
         <p>
             Tathva International School - Your future starts here.
         </p>
-    </div>
-
-    <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
-
-    <div class="heading-item mat-elevation-z3">
-        <h1>Our Education</h1>
-    </div>
-    <div fxFlexAlign="center" class="body-item">
-        <p>A top class education requires world class educators. At Tathva we are proud to have a teaching body comprising of
-            experienced, qualified and professional teachers from a number of countries, including: Canada, the UK, Hong
-            Kong, USA, Philippines, Australia, Japan, China and India. This allows our students access to a truly international
-            experience, not only following the Cambridge curriculum, but also adapting techniques from the US Common Core,
-            the UK National Curriculum and educational systems from countries around the world.
-        </p>
-        <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" md-raised-button color="accent">Read More</a>
+        <!-- <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" md-raised-button color="accent">Read More</a> -->
         <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
-            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener"><img src="../assets/home/cie_logo.png" /></a>
-            <a href="https://ipc.education/" target="_blank" rel="noopener"><img src="../assets/home/ipc_logo.png" /></a>
+            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener">
+                <img src="../assets/home/cie_logo.png" />
+            </a>
+            <a href="https://ipc.education/" target="_blank" rel="noopener">
+                <img src="../assets/home/ipc_logo.png" />
+            </a>
         </div>
     </div>
 
@@ -81,6 +71,19 @@
                     </p>
                 </md-card-content>
             </md-card>
+        </div>
+    </div>
+
+    <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
+
+    <div class="heading-item mat-elevation-z3">
+        <h1>Upcoming Events</h1>
+    </div>
+    <div class="upcoming-container">
+        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+            <app-calendar-card></app-calendar-card>
+            <app-calendar-card></app-calendar-card>
+            <app-calendar-card></app-calendar-card>
         </div>
     </div>
 

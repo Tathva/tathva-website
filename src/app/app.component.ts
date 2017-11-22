@@ -66,23 +66,23 @@ export class AppComponent {
       ]
     },
     {
-      title: 'Extracurricular',
+      title: 'School Life',
       links: [
         {
-          url: '/eca/clubs',
+          url: '/life/clubs',
           name: 'Our Clubs'
         },
         {
-          url: '/eca/sof',
-          name: 'Science Olympiad Foundation'
+          url: '/life/charity',
+          name: 'Our Charities'
         },
         {
-          url: '/eca/spelling',
-          name: 'Japan National Spelling Bee'
+          url: '/life/examinations',
+          name: 'External Examinations'
         },
         {
-          url: '/eca/chess',
-          name: 'Japan National Chess'
+          url: '/life/national',
+          name: 'National Competitions'
         },
       ]
     },

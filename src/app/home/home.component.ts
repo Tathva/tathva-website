@@ -21,9 +21,9 @@ export class HomeComponent {
   };
 
   public paraConf: IParallaxScrollConfig = {
-    speed: .08,
+    speed: .04,
     initialValue: -50,
-    maxValue: 50,
+    maxValue: 0,
     cssUnit: '%'
   }
 

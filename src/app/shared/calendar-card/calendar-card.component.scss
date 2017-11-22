@@ -1,0 +1,17 @@
+@import '../../../theme';
+
+.calendar-card {
+  background-color: mat-color($tathva-app-primary);
+  color: $fore-color;
+  height: 150px;
+  width: 200px;
+}
+
+.mat-card-title {
+  font-family: $brand-font;
+  font-size: 2rem;
+}
+
+.mat-card-subtitle {
+  color: $fore-color;
+}

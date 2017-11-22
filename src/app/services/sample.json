@@ -1,0 +1,94 @@
+{
+    "kind": "calendar#events",
+    "etag": "\"p32gcn0n7pr7de0g\"",
+    "summary": "School Calendar",
+    "description": "School Calendar for the year.",
+    "updated": "2017-11-21T02:26:06.916Z",
+    "timeZone": "Asia/Tokyo",
+    "accessRole": "reader",
+    "defaultReminders": [],
+    "nextPageToken": "EiUKGjJkajJidWNqbHA0Z25nZHQ3bHVlazEzbGJzGICAmvf-5NcC",
+    "items": [
+        {
+            "kind": "calendar#event",
+            "etag": "\"2988593534920000\"",
+            "id": "dm4a5kp3o1qltu535nu3rov61g",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZG00YTVrcDNvMXFsdHU1MzVudTNyb3Y2MWcgdGF0aHZhLmVkLmpwX2xudmUwcW5mYW52aWk1YWx0dTQzdDM1bzJvQGc",
+            "created": "2017-05-09T02:26:03.000Z",
+            "updated": "2017-05-09T02:26:07.460Z",
+            "summary": "Labour Thanksgiving Day",
+            "creator": {
+                "email": "christopher.johns@tathva.ed.jp"
+            },
+            "organizer": {
+                "email": "tathva.ed.jp_lnve0qnfanvii5altu43t35o2o@group.calendar.google.com",
+                "displayName": "School Calendar",
+                "self": true
+            },
+            "start": {
+                "date": "2017-11-23"
+            },
+            "end": {
+                "date": "2017-11-24"
+            },
+            "transparency": "transparent",
+            "iCalUID": "dm4a5kp3o1qltu535nu3rov61g@google.com",
+            "sequence": 0
+        },
+        {
+            "kind": "calendar#event",
+            "etag": "\"2988593552156000\"",
+            "id": "h4hna52mhugta7ulvcaml80qf4",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=aDRobmE1Mm1odWd0YTd1bHZjYW1sODBxZjQgdGF0aHZhLmVkLmpwX2xudmUwcW5mYW52aWk1YWx0dTQzdDM1bzJvQGc",
+            "created": "2017-05-09T02:26:12.000Z",
+            "updated": "2017-05-09T02:26:16.078Z",
+            "summary": "Free Dress Day",
+            "creator": {
+                "email": "christopher.johns@tathva.ed.jp"
+            },
+            "organizer": {
+                "email": "tathva.ed.jp_lnve0qnfanvii5altu43t35o2o@group.calendar.google.com",
+                "displayName": "School Calendar",
+                "self": true
+            },
+            "start": {
+                "date": "2017-11-24"
+            },
+            "end": {
+                "date": "2017-11-25"
+            },
+            "transparency": "transparent",
+            "iCalUID": "h4hna52mhugta7ulvcaml80qf4@google.com",
+            "sequence": 0
+        },
+        {
+            "kind": "calendar#event",
+            "etag": "\"2988593578454000\"",
+            "id": "2dj2bucjlp4gngdt7luek13lbs",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=MmRqMmJ1Y2pscDRnbmdkdDdsdWVrMTNsYnMgdGF0aHZhLmVkLmpwX2xudmUwcW5mYW52aWk1YWx0dTQzdDM1bzJvQGc",
+            "created": "2017-05-09T02:26:26.000Z",
+            "updated": "2017-05-09T02:26:29.227Z",
+            "summary": "Earthquake Drill",
+            "creator": {
+                "email": "christopher.johns@tathva.ed.jp"
+            },
+            "organizer": {
+                "email": "tathva.ed.jp_lnve0qnfanvii5altu43t35o2o@group.calendar.google.com",
+                "displayName": "School Calendar",
+                "self": true
+            },
+            "start": {
+                "date": "2017-11-30"
+            },
+            "end": {
+                "date": "2017-12-01"
+            },
+            "transparency": "transparent",
+            "iCalUID": "2dj2bucjlp4gngdt7luek13lbs@google.com",
+            "sequence": 0
+        }
+    ]
+}
