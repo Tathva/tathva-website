@@ -1,7 +1,7 @@
 @import 'src/theme';
 
 .mat-button {
-  &.md-small {
+  &.mat-small {
     min-width: 1%;
     padding: 0 8px;
   }
@@ -22,7 +22,7 @@
   height: 100%;
 }
 
-md-sidenav-container {
+mat-sidenav-container {
   bottom: 0;
   position: relative;
   top: 64px;
@@ -32,7 +32,7 @@ md-sidenav-container {
   height: calc(100% - 64px);
 }
 
-md-sidenav {
+mat-sidenav {
   height: 100%;
   width: 200px;
 }
@@ -47,7 +47,7 @@ md-sidenav {
     height: calc(100% - 56px);
   }
 
-  md-sidenav-container {
+  mat-sidenav-container {
     top: 56px;
   }
 }
@@ -72,7 +72,7 @@ md-sidenav {
   z-index: 100;
 }
 
-md-toolbar {
+mat-toolbar {
 
   h1 {
     font-family: $brand-font;
@@ -132,7 +132,7 @@ section {
 
 footer {
 
-  md-toolbar {
+  mat-toolbar {
     height: $footer-height;
   }
 
@@ -174,7 +174,7 @@ footer {
   }
 
   // Scale down the title per screen size
-  @media screen and (max-width: $screen-md) {
+  @media screen and (max-width: $screen-mat) {
     h1 {
       font-size: 1rem;
     }

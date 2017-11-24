@@ -1,12 +1,12 @@
-<md-toolbar color="primary" class="mat-elevation-z3 header-bar">
-    <button md-button (click)="sidenav.toggle()" fxHide="false" fxHide.gt-sm class="md-small">
-        <md-icon class="burger">{{menuIcon}}</md-icon>
+<mat-toolbar color="primary" class="mat-elevation-z3 header-bar">
+    <button mat-button (click)="sidenav.toggle()" fxHide="false" fxHide.gt-sm class="mat-small">
+        <mat-icon class="burger">{{menuIcon}}</mat-icon>
     </button>
 
-    <a routerLink="/home" fxShow="false" fxShow.gt-sm class="md-small">
-        <div md-card-avatar class="logo mat-elevation-z3"></div>
+    <a routerLink="/home" fxShow="false" fxShow.gt-sm class="mat-small">
+        <div mat-card-avatar class="logo mat-elevation-z3"></div>
     </a>
-    <a routerLink="/home" class="md-small" class="title">
+    <a routerLink="/home" class="mat-small" class="title">
         <h1>Tathva International School</h1>
     </a>
 
@@ -18,15 +18,15 @@
             </li>
         </ul>
     </div>
-</md-toolbar>
+</mat-toolbar>
 
-<md-sidenav-container [ngClass]="{'open-nav': isOpen}">
-    <md-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
-        <md-nav-list dense (click)="sidenav.close()" class="scroll-content">
-            <h3 md-subheader><a routerLink="/home">Home</a></h3>
+<mat-sidenav-container [ngClass]="{'open-nav': isOpen}">
+    <mat-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
+        <mat-nav-list dense (click)="sidenav.close()" class="scroll-content">
+            <h3 mat-subheader><a routerLink="/home">Home</a></h3>
             <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
-        </md-nav-list>
-    </md-sidenav>
+        </mat-nav-list>
+    </mat-sidenav>
 
     <div class="site-container">
         <div class="site">
@@ -35,7 +35,7 @@
             </section>
 
             <footer>
-                <md-toolbar class="footer" color="primary">
+                <mat-toolbar class="footer" color="primary">
                     <ul class="linklist" fxShow="false" fxShow.gt-sm>
                         <li *ngFor="let group of nav_groups" class="linkset">
                             <h3>{{group.title | uppercase}}</h3>
@@ -45,26 +45,26 @@
                         </li>
                     </ul>
                     <span class="fill-remaining-space" fxShow="false" fxShow.gt-sm></span>
-                    <md-list dense class="contact-list">
-                        <a md-list-item href="tel:0368089090">
-                            <md-icon md-list-icon>phone</md-icon>
-                            <span md-line>03-6808-9090</span>
+                    <mat-list dense class="contact-list">
+                        <a mat-list-item href="tel:0368089090">
+                            <mat-icon mat-list-icon>phone</mat-icon>
+                            <span mat-line>03-6808-9090</span>
                         </a>
-                        <a md-list-item href="mailto:info@tathva.ed.jp">
-                            <md-icon md-list-icon>mail</md-icon>
-                            <span md-line>info@tathva.ed.jp</span>
+                        <a mat-list-item href="mailto:info@tathva.ed.jp">
+                            <mat-icon mat-list-icon>mail</mat-icon>
+                            <span mat-line>info@tathva.ed.jp</span>
                         </a>
-                        <a md-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
-                            <md-icon md-list-icon>pin_drop</md-icon>
-                            <p md-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+                        <a mat-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+                            <mat-icon mat-list-icon>pin_drop</mat-icon>
+                            <p mat-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
                                 4-1-1 Higashi Komatsugawa,
                             </p>
-                            <p md-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
+                            <p mat-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
                         </a>
-                    </md-list>
-                </md-toolbar>
+                    </mat-list>
+                </mat-toolbar>
             </footer>
         </div>
     </div>
 
-</md-sidenav-container>
+</mat-sidenav-container>

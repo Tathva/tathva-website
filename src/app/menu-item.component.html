@@ -1,6 +1,6 @@
-<button md-button [mdMenuTriggerFor]="menu">
+<button mat-button [matMenuTriggerFor]="menu">
   {{item.title}}
 </button>
-<md-menu #menu="mdMenu" yPosition="below" [overlapTrigger]="false" class="menu">
-  <a md-menu-item *ngFor="let link of item.links" routerLink="{{link.url}}">{{link.name}}</a>
-</md-menu>
+<mat-menu #menu="matMenu" yPosition="below" [overlapTrigger]="false" class="menu">
+  <a mat-menu-item *ngFor="let link of item.links" routerLink="{{link.url}}">{{link.name}}</a>
+</mat-menu>
