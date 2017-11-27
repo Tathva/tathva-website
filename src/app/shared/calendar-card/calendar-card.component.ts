@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-calendar-card',
   templateUrl: './calendar-card.component.html',
   styleUrls: ['./calendar-card.component.scss']
 })
-export class CalendarCardComponent implements OnInit {
+export class CalendarCardComponent {
+  @Input() item: any;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor() {}
 
 }

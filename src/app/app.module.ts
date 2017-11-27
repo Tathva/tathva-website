@@ -3,9 +3,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import {HttpClientModule} from '@angular/common/http';
+
 import 'hammerjs';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 
 import { AppComponent } from './app.component';
@@ -31,9 +34,11 @@ import { CalendarService } from './services/calendar.service';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppMaterialModule,
     FlexLayoutModule,
     SwiperModule,
+    Ng2CarouselamosModule,
     ParallaxScrollModule,
     SharedModule,
     AppRoutingModule,

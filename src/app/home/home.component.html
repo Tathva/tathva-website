@@ -1,5 +1,5 @@
 <div class="title mat-typography" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
-    <img src="../assets/logo_mat.png" />
+    <img src="../assets/logo_md.png" />
     <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
         <h1>Tathva International School</h1>
         <h4>Educate &#8226; Engage &#8226; Enlighten</h4>
@@ -80,10 +80,47 @@
         <h1>Upcoming Events</h1>
     </div>
     <div class="upcoming-container">
-        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
-            <app-calendar-card></app-calendar-card>
-            <app-calendar-card></app-calendar-card>
-            <app-calendar-card></app-calendar-card>
+        <div class="calendar" fxLayout="column" fxLayoutAlign="stretch">
+            <div id="container">
+                <div ng2-carouselamos class="slides-wrapper" 
+                    [items]="calEvents" 
+                    [width]="900" 
+                    [$prev]="prev" 
+                    [$next]="next"
+                    [$item]="item">
+                </div>
+
+                <ng-template #prev>
+                    <div class="cal-button-prev">
+                        <mat-icon>keyboard_arrow_left</mat-icon>
+                    </div>
+                </ng-template>
+                <ng-template #next>
+                    <div class="cal-button-next">
+                        <mat-icon>keyboard_arrow_right</mat-icon>
+                    </div>
+                </ng-template>
+                <ng-template #item let-item let-i="index">
+                    <app-calendar-card [item]="item"></app-calendar-card>
+                </ng-template>
+                
+                <!-- <div [swiper]="calConfig" class="calender-container">
+                <div class="cal-wrapper">
+                    <div *ngFor="let cal of calEvents">
+                        <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                            <app-calendar-card [item]="cal"></app-calendar-card>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-pagination"></div> 
+                <div class="cal-button-prev">
+                    <mat-icon>keyboard_arrow_left</mat-icon>
+                </div>
+                <div class="cal-button-next">
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                </div> -->
+            </div>
         </div>
     </div>
 
@@ -110,9 +147,6 @@
                         IGCSE, O Level, AS/A Level (including science practical components)
                     </p>
                 </mat-card-content>
-                <mat-card-actions>
-                    <a routerLink="/education/cambridge" mat-raised-button color="accent">Read More</a>
-                </mat-card-actions>
             </mat-card>
 
             <mat-card class="links-card" fxLayout="column">

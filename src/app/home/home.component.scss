@@ -69,6 +69,24 @@ $swiper-mask: rgba(255, 255, 255, .5);
   }
 }
 
+.calender-container {
+  height: auto;
+  max-height: 600px;
+  max-width: 100%;
+}
+
+.cal-button-next,
+.cal-button-prev {
+  background: mat-color($tathva-app-primary);
+  background-image: none;
+  background-size: cover;
+  border-radius: 100%;
+  color: mat-color($tathva-app-accent);
+  height: 1.5rem;
+  transform: scale(1.5);
+  width: 1.5rem;
+}
+
 ::ng-deep .swiper-pagination {
   .swiper-pagination-bullet {
     background-color: mat-color($tathva-app-accent);
@@ -124,6 +142,10 @@ h1 {
 
 .cards {
   padding: 20px;
+}
+
+.calendar {
+  padding: 2rem;
 }
 
 .values-card {
