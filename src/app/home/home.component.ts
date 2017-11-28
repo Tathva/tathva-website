@@ -45,7 +45,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.calService.result.subscribe(res => {this.calEvents = res;
-    console.log(res);});
+    console.log(res);
+  });
     this.calService.getEvents();
   }
 

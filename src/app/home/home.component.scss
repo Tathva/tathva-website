@@ -86,8 +86,8 @@ $disabled-fg: #333;
   color: mat-color($tathva-app-accent);
   height: 1.5rem;
   transform: scale(1.5);
-  width: 1.5rem;
   transition: all .2s ease-in-out;
+  width: 1.5rem;
 
   &.disabled {
     background: $disabled-bg;
@@ -145,8 +145,8 @@ h1 {
 }
 
 .upcoming-container {
-  width: 100%;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .cards {
