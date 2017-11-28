@@ -1,6 +1,8 @@
 @import '../../theme';
 
 $swiper-mask: rgba(255, 255, 255, .5);
+$disabled-bg: #808080;
+$disabled-fg: #333;
 
 .title {
   align-content: center;
@@ -85,6 +87,13 @@ $swiper-mask: rgba(255, 255, 255, .5);
   height: 1.5rem;
   transform: scale(1.5);
   width: 1.5rem;
+  transition: all .2s ease-in-out;
+
+  &.disabled {
+    background: $disabled-bg;
+    color: $disabled-fg;
+    transform: scale(0);
+  }
 }
 
 ::ng-deep .swiper-pagination {

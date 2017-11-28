@@ -87,46 +87,39 @@
                     [width]="810" 
                     [$prev]="prev" 
                     [$next]="next"
-                    [$item]="item">
+                    [$item]="item"
+                    (onSelectedItem)="selectedIndex = $event.index">
                 </div>
                 <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm
                     [items]="calEvents" 
                     [width]="232" 
                     [$prev]="prev" 
                     [$next]="next"
-                    [$item]="item">
+                    [$item]="item"
+                    (onSelectedItem)="selectedIndex = $event.index">
                 </div>
 
                 <ng-template #prev>
-                    <div class="cal-button-prev mat-elevation-z2">
-                        <mat-icon>keyboard_arrow_left</mat-icon>
+                    <div class="cal-button-prev mat-elevation-z2"
+                        [ngClass]="{'disabled': (selectedIndex == 0)}">
+                        <mat-icon (click)="nextCal()">keyboard_arrow_left</mat-icon>
                     </div>
                 </ng-template>
                 <ng-template #next>
-                    <div class="cal-button-next mat-elevation-z2">
-                        <mat-icon>keyboard_arrow_right</mat-icon>
+                    <div fxShow="false" fxShow.gt-sm 
+                        class="cal-button-next mat-elevation-z2"
+                        [ngClass]="{'disabled': (selectedIndex >= 8)}">
+                        <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
+                    </div>
+                    <div fxShow="false" fxShow.lt-sm 
+                        class="cal-button-next mat-elevation-z2"
+                        [ngClass]="{'disabled': (selectedIndex >= 9)}">
+                        <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
                     </div>
                 </ng-template>
                 <ng-template #item let-item let-i="index">
                     <app-calendar-card [item]="item"></app-calendar-card>
                 </ng-template>
-                
-                <!-- <div [swiper]="calConfig" class="calender-container">
-                <div class="cal-wrapper">
-                    <div *ngFor="let cal of calEvents">
-                        <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-                            <app-calendar-card [item]="cal"></app-calendar-card>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="swiper-pagination"></div> 
-                <div class="cal-button-prev">
-                    <mat-icon>keyboard_arrow_left</mat-icon>
-                </div>
-                <div class="cal-button-next">
-                    <mat-icon>keyboard_arrow_right</mat-icon>
-                </div> -->
             </div>
         </div>
     </div>

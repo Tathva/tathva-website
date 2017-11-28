@@ -23,13 +23,13 @@ export class CalendarService {
             .set('key', this.apiKey)
             .set('orderBy', 'startTime')
             .set('singleEvents', 'true')
+            .set('maxResults', '10')
             .set('timeMin', new Date().toISOString());
     }
 
     getEvents() {
         this.http.get(this.apiUrl, {
             params: this.searchParams
-                .set('maxResults', '9')
         }).subscribe(data => {
             this.results.next(data['items']);
             this.nextPageToken = data['nextPageToken'];
@@ -39,7 +39,6 @@ export class CalendarService {
     getNext() {
         this.http.get(this.apiUrl, {
             params: this.searchParams
-                .set('maxResults', '1')
                 .set('nextPageToken', this.nextPageToken)
         }).subscribe(data => {
             this.results.next(data['items']);

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { IParallaxScrollConfig } from 'ng2-parallaxscroll';
 import { CalendarService } from '.././services/calendar.service';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-home',
@@ -19,20 +18,6 @@ export class HomeComponent implements OnInit {
     loop: true,
     autoplay: 3000,
     autoplayDisableOnInteraction: false,
-  };
-
-  public calConfig: SwiperConfigInterface = {
-    //pagination: '.swiper-pagination',
-    //paginationClickable: true,
-    nextButton: '.cal-button-next',
-    prevButton: '.cal-button-prev',
-    wrapperClass: 'cal-wrapper',
-    containerModifierClass: 'calendar-container',
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 50,
-    loop: false,
-    observer: true
   };
 
   public paraConf: IParallaxScrollConfig = {
@@ -53,13 +38,20 @@ export class HomeComponent implements OnInit {
     '../assets/carousel/carousel_4.jpg'
   ];
 
-  calEvents: any[];
+  calEvents = [];
+  selectedIndex = 0: number;
 
   constructor(private calService: CalendarService) { }
 
   ngOnInit() {
-    this.calService.result.subscribe(res => this.calEvents = res);
+    this.calService.result.subscribe(res => {this.calEvents = res;
+    console.log(res);});
     this.calService.getEvents();
+  }
+
+  nextCal() {
+    console.log(this.calEvents.length);
+    console.log(this.selectedIndex);
   }
 
 }
