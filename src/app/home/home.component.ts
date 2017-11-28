@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     prevButton: '.swiper-button-prev',
     loop: true,
     autoplay: 3000,
-    autoplayDisableOnInteraction: false,
+    autoplayDisableOnInteraction: false
   };
 
   public paraConf: IParallaxScrollConfig = {
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
   ];
 
   calEvents = [];
-  selectedIndex = 0: number;
+  selectedIndex = 0;
 
   constructor(private calService: CalendarService) { }
 
