@@ -174,7 +174,7 @@ footer {
   }
 
   // Scale down the title per screen size
-  @media screen and (max-width: $screen-mat) {
+  @media screen and (max-width: $screen-md) {
     h1 {
       font-size: 1rem;
     }

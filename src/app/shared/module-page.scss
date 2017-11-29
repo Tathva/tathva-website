@@ -45,11 +45,11 @@ $linklist-width: 200px;
 
 .content {
   margin: 20px;
-  max-width: $screen-mat;
+  max-width: $screen-md;
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: $screen-mat) {
+@media screen and (max-width: $screen-md) {
   .content {
     max-width: 95%;
     width: 95%;
