@@ -65,27 +65,27 @@ export class AppComponent {
         // },
       ]
     },
-    {
-      title: 'School Life',
-      links: [
-        {
-          url: '/life/clubs',
-          name: 'Our Clubs'
-        },
-        {
-          url: '/life/charity',
-          name: 'Our Charities'
-        },
-        {
-          url: '/life/examinations',
-          name: 'External Examinations'
-        },
-        {
-          url: '/life/national',
-          name: 'National Competitions'
-        },
-      ]
-    },
+    // {
+    //   title: 'School Life',
+    //   links: [
+    //     {
+    //       url: '/life/clubs',
+    //       name: 'Our Clubs'
+    //     },
+    //     {
+    //       url: '/life/charity',
+    //       name: 'Our Charities'
+    //     },
+    //     {
+    //       url: '/life/examinations',
+    //       name: 'External Examinations'
+    //     },
+    //     {
+    //       url: '/life/national',
+    //       name: 'National Competitions'
+    //     },
+    //   ]
+    // },
     {
       title: 'Contact',
       links: [
