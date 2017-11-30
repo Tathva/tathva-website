@@ -11,30 +11,37 @@
   flex: 1 1 auto;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-bar {
+  position: fixed;
+  z-index: 100;
+}
+
+.sidenav-container {
+  flex: 1;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-sidenav {
+  width: 200px;
+}
+
 .site {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
   min-height: calc(100vh - 64px);
-}
-
-.site-container {
-  height: 100%;
-}
-
-mat-sidenav-container {
-  bottom: 0;
-  position: relative;
-  top: 64px;
-}
-
-.open-nav {
-  height: calc(100% - 64px);
-}
-
-mat-sidenav {
-  height: 100%;
-  width: 200px;
 }
 
 // For shrinking toolbar on mobile
@@ -43,12 +50,8 @@ mat-sidenav {
     min-height: calc(100vh - 56px);
   }
 
-  .open-nav {
-    height: calc(100% - 56px);
-  }
-
-  mat-sidenav-container {
-    top: 56px;
+  .sidenav-container {
+    margin-top: 56px;
   }
 }
 
@@ -66,11 +69,6 @@ mat-sidenav {
   }
 }
 
-.header-bar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
 
 mat-toolbar {
 
@@ -127,7 +125,6 @@ mat-toolbar {
 
 section {
   flex: 1;
-  padding-bottom: -$footer-height;
 }
 
 footer {

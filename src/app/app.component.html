@@ -1,70 +1,76 @@
-<mat-toolbar color="primary" class="mat-elevation-z3 header-bar">
-    <button mat-button (click)="sidenav.toggle()" fxHide="false" fxHide.gt-sm class="mat-small">
-        <mat-icon class="burger">{{menuIcon}}</mat-icon>
-    </button>
+<div class="app-container">
+    <mat-toolbar color="primary" class="mat-elevation-z3 header-bar">
+        <button mat-button (click)="sidenav.toggle()" fxHide="false" fxHide.gt-sm class="mat-small">
+            <mat-icon class="burger">{{menuIcon}}</mat-icon>
+        </button>
 
-    <a routerLink="/home" fxShow="false" fxShow.gt-sm class="mat-small">
-        <div mat-card-avatar class="logo mat-elevation-z3"></div>
-    </a>
-    <a routerLink="/home" class="mat-small" class="title">
-        <h1>Tathva International School</h1>
-    </a>
+        <a routerLink="/home" fxShow="false" fxShow.gt-sm class="mat-small">
+            <div mat-card-avatar class="logo mat-elevation-z3"></div>
+        </a>
+        <a routerLink="/home" class="mat-small" class="title">
+            <h1>Tathva International School</h1>
+        </a>
 
-    <span class="fill-remaining-space"></span>
-    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
-        <ul class="navlist">
-            <li *ngFor="let group of nav_groups">
-                <app-menu-item [item]="group"></app-menu-item>
-            </li>
-        </ul>
-    </div>
-</mat-toolbar>
-
-<mat-sidenav-container [ngClass]="{'open-nav': isOpen}">
-    <mat-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()">
-        <mat-nav-list dense (click)="sidenav.close()" class="scroll-content">
-            <h3 mat-subheader><a routerLink="/home">Home</a></h3>
-            <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
-        </mat-nav-list>
-    </mat-sidenav>
-
-    <div class="site-container">
-        <div class="site">
-            <section>
-                <router-outlet></router-outlet>
-            </section>
-
-            <footer>
-                <mat-toolbar class="footer" color="primary">
-                    <ul class="linklist" fxShow="false" fxShow.gt-sm>
-                        <li *ngFor="let group of nav_groups" class="linkset">
-                            <h3>{{group.title | uppercase}}</h3>
-                            <ul>
-                                <li *ngFor="let link of group.links"><a routerLink="{{link.url}}" color="accent">{{link.name}}</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <span class="fill-remaining-space" fxShow="false" fxShow.gt-sm></span>
-                    <mat-list dense class="contact-list">
-                        <a mat-list-item href="tel:0368089090">
-                            <mat-icon mat-list-icon>phone</mat-icon>
-                            <span mat-line>03-6808-9090</span>
-                        </a>
-                        <a mat-list-item href="mailto:info@tathva.ed.jp">
-                            <mat-icon mat-list-icon>mail</mat-icon>
-                            <span mat-line>info@tathva.ed.jp</span>
-                        </a>
-                        <a mat-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
-                            <mat-icon mat-list-icon>pin_drop</mat-icon>
-                            <p mat-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
-                                4-1-1 Higashi Komatsugawa,
-                            </p>
-                            <p mat-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
-                        </a>
-                    </mat-list>
-                </mat-toolbar>
-            </footer>
+        <span class="fill-remaining-space"></span>
+        <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+            <ul class="navlist">
+                <li *ngFor="let group of nav_groups">
+                    <app-menu-item [item]="group"></app-menu-item>
+                </li>
+            </ul>
         </div>
-    </div>
+    </mat-toolbar>
 
-</mat-sidenav-container>
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #sidenav mode="push" (close)="onClose()" (open)="onOpen()"
+            fixedInViewport="true" fixedTopGap="56" >
+            <mat-nav-list dense (click)="sidenav.close()" class="scroll-content">
+                <h3 mat-subheader>
+                    <a routerLink="/home">Home</a>
+                </h3>
+                <app-sidebar-item *ngFor="let group of nav_groups" [item]="group"></app-sidebar-item>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content id="content" class="site-container">
+            <div class="site"  #site>
+                <section>
+                    <router-outlet></router-outlet>
+                </section>
+
+                <footer>
+                    <mat-toolbar class="footer" color="primary">
+                        <ul class="linklist" fxShow="false" fxShow.gt-sm>
+                            <li *ngFor="let group of nav_groups" class="linkset">
+                                <h3>{{group.title | uppercase}}</h3>
+                                <ul>
+                                    <li *ngFor="let link of group.links">
+                                        <a routerLink="{{link.url}}" color="accent">{{link.name}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <span class="fill-remaining-space" fxShow="false" fxShow.gt-sm></span>
+                        <mat-list dense class="contact-list">
+                            <a mat-list-item href="tel:0368089090">
+                                <mat-icon mat-list-icon>phone</mat-icon>
+                                <span mat-line>03-6808-9090</span>
+                            </a>
+                            <a mat-list-item href="mailto:info@tathva.ed.jp">
+                                <mat-icon mat-list-icon>mail</mat-icon>
+                                <span mat-line>info@tathva.ed.jp</span>
+                            </a>
+                            <a mat-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+                                <mat-icon mat-list-icon>pin_drop</mat-icon>
+                                <p mat-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+                                    4-1-1 Higashi Komatsugawa,
+                                </p>
+                                <p mat-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
+                            </a>
+                        </mat-list>
+                    </mat-toolbar>
+                </footer>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

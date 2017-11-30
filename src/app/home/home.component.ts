@@ -24,11 +24,13 @@ export class HomeComponent implements OnInit {
     speed: .04,
     initialValue: -50,
     maxValue: 0,
-    cssUnit: '%'
+    cssUnit: '%',
+    scrollerId: 'content'
   }
 
   public cardParaConf: IParallaxScrollConfig = {
-    speed: .2
+    speed: .2,
+    scrollerId: 'content'
   }
 
   public images = [
