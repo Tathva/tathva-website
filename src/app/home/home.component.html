@@ -16,7 +16,7 @@
 <div [swiper]="config" class="swiper-container" [runInsideAngular]="true">
     <div class="swiper-wrapper">
         <div *ngFor="let image of images" class="swiper-slide" fxLayout="column" fxLayoutAlign="center center">
-            <img src="{{image}}" />
+            <img src="{{image}}_sm.jpg" srcset="{{image}}_sm.jpg 600w, {{image}}.jpg 1920w" />
         </div>
     </div>
 

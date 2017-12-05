@@ -34,10 +34,10 @@ export class HomeComponent implements OnInit {
   }
 
   public images = [
-    '../assets/carousel/carousel_1.jpg',
-    '../assets/carousel/carousel_2.jpg',
-    '../assets/carousel/carousel_3.jpg',
-    '../assets/carousel/carousel_4.jpg'
+    '../assets/carousel/carousel_1',
+    '../assets/carousel/carousel_2',
+    '../assets/carousel/carousel_3',
+    '../assets/carousel/carousel_4'
   ];
 
   calEvents = [];
