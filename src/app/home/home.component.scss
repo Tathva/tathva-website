@@ -26,6 +26,8 @@ $disabled-fg: #333;
     @media screen and (max-width: $screen-md) {
       h1 {
         font-size: 2rem;
+        margin: 0;
+        padding: 0;
       }
 
       h4 {
