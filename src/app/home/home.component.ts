@@ -33,12 +33,7 @@ export class HomeComponent implements OnInit {
     scrollerId: 'content'
   }
 
-  public images = [
-    '../assets/carousel/carousel_1',
-    '../assets/carousel/carousel_2',
-    '../assets/carousel/carousel_3',
-    '../assets/carousel/carousel_4'
-  ];
+  public images = Array(4).fill(null);
 
   calEvents = [];
   selectedIndex = 0;
@@ -48,6 +43,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.calService.result.subscribe(res => this.calEvents = res);
     this.calService.getEvents();
+
+    this.images = [
+      '../assets/carousel/carousel_1',
+      '../assets/carousel/carousel_2',
+      '../assets/carousel/carousel_3',
+      '../assets/carousel/carousel_4'
+    ];
   }
 
   nextCal() {
