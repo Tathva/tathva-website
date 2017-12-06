@@ -13,10 +13,12 @@
     </div>
 </div>
 
-<div [swiper]="config" class="swiper-container" [runInsideAngular]="true">
+<div [swiper]="config" class="swiper-container">
     <div class="swiper-wrapper">
-        <div *ngFor="let image of images" class="swiper-slide" fxLayout="column" fxLayoutAlign="center center">
-            <img src="{{image}}_sm.jpg" srcset="{{image}}_sm.jpg 600w, {{image}}.jpg 1920w" />
+        <div *ngFor="let image of images" class="swiper-slide">
+            <img data-src="{{image}}.jpg" data-srcset="{{image}}_sm.jpg 600w, {{image}}.jpg 1920w" 
+                 class="swiper-lazy">
+            <div class="swiper-lazy-preloader"></div>
         </div>
     </div>
 
@@ -43,11 +45,11 @@
         </p>
         <!-- <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" mat-raised-button color="accent">Read More</a> -->
         <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
-            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener">
-                <img src="../assets/home/cie_logo.png" />
+            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
+                <img src="assets/home/cie_logo.png" alt="Cambridge International Examinations">
             </a>
-            <a href="https://ipc.education/" target="_blank" rel="noopener">
-                <img src="../assets/home/ipc_logo.png" />
+            <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
+                <img src="assets/home/ipc_logo.png" alt="International Preschool Curriculum">
             </a>
         </div>
     </div>

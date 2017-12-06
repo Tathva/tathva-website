@@ -16,8 +16,10 @@ export class HomeComponent implements OnInit {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     loop: true,
-    autoplay: 3000,
-    autoplayDisableOnInteraction: false
+    autoplay: 5000,
+    autoplayDisableOnInteraction: false,
+    preloadImages: false,
+    lazyLoading: true
   };
 
   public paraConf: IParallaxScrollConfig = {
@@ -33,7 +35,12 @@ export class HomeComponent implements OnInit {
     scrollerId: 'content'
   }
 
-  public images = Array(4).fill(null);
+  public images = [
+    '../assets/carousel/carousel_1',
+    '../assets/carousel/carousel_2',
+    '../assets/carousel/carousel_3',
+    '../assets/carousel/carousel_4'
+  ]
 
   calEvents = [];
   selectedIndex = 0;
@@ -43,13 +50,6 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.calService.result.subscribe(res => this.calEvents = res);
     this.calService.getEvents();
-
-    this.images = [
-      '../assets/carousel/carousel_1',
-      '../assets/carousel/carousel_2',
-      '../assets/carousel/carousel_3',
-      '../assets/carousel/carousel_4'
-    ];
   }
 
   nextCal() {
