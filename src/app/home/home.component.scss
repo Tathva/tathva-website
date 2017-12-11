@@ -46,6 +46,7 @@ $disabled-fg: #333;
 
 .swiper-container {
   height: auto;
+  margin-bottom: -5px; //Counter the odd ratio
   max-height: 600px;
   max-width: 100%;
   width: 100%;
