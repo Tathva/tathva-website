@@ -69,9 +69,7 @@ mat-sidenav {
   }
 }
 
-
 mat-toolbar {
-
   h1 {
     font-family: $brand-font;
   }
@@ -83,7 +81,7 @@ mat-toolbar {
       display: inline;
     }
 
-    li~li {
+    li ~ li {
       border-left: 1px solid;
     }
   }
@@ -128,7 +126,6 @@ section {
 }
 
 footer {
-
   mat-toolbar {
     height: $footer-height;
   }
@@ -165,15 +162,20 @@ footer {
 }
 
 .title {
-
   h1 {
     font-size: 1.5rem;
   }
 
   // Scale down the title per screen size
   @media screen and (max-width: $screen-xs) {
+    // Position center to screen
+    left: 0;
+    position: absolute;
+    width: 100vw;
+
     h1 {
       font-size: 1rem;
+      text-align: center;
     }
   }
 }

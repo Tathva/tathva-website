@@ -1,23 +1,14 @@
-<div class="title mat-typography" fxLayout="column" fxLayout.gt-xs="row" fxLayoutAlign="center center">
-    <img src="../assets/logo_md.png" />
-    <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
-        <div fxHide fxShow.gt-xs>
-            <h1>Tathva International School</h1>
-        </div>
-        <div fxHide.gt-xs fxLayoutAlign="space-around center" fxLayout="column">
-            <h1>Tathva</h1>
-            <h1>International</h1>
-            <h1>School</h1>
-        </div>
-        <h4>Educate &#8226; Engage &#8226; Enlighten</h4>
-    </div>
+<div class="title mat-typography" fxLayout="column" fxLayoutAlign="center center">
+    <img src="../assets/logo_title.png" />
+    <h4>Educate &#8226; Engage &#8226; Enlighten</h4>
 </div>
 
 <div [swiper]="config" class="swiper-container">
     <div class="swiper-wrapper">
         <div *ngFor="let image of images" class="swiper-slide">
-            <img data-src="{{image}}_quote.jpg" data-srcset="{{image}}_sm.jpg 600w, {{image}}_quote.jpg 1920w" 
-                 class="swiper-lazy">
+            <img data-src="{{image}}_quote.jpg" class="swiper-lazy"
+                 data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
+                              {{image}}_sm.jpg 640w, {{image}}.jpg 768w, {{image}}.jpg 3x">
             <div class="swiper-lazy-preloader"></div>
         </div>
     </div>
@@ -46,10 +37,10 @@
         <!-- <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" mat-raised-button color="accent">Read More</a> -->
         <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
             <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
-                <img src="assets/home/cie_logo.png" alt="Cambridge International Examinations">
+                <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
             </a>
             <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
-                <img src="assets/home/ipc_logo.png" alt="International Preschool Curriculum">
+                <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
             </a>
         </div>
     </div>
@@ -60,7 +51,7 @@
                 <mat-card-title>Educate</mat-card-title>
                 <mat-card-content>
                     <p>
-                        Children with strong fundamentals and encourage them to apply and experience their learnings.
+                        children with strong fundamentals and encourage them to apply and experience their learnings.
                     </p>
                 </mat-card-content>
             </mat-card>
@@ -68,7 +59,7 @@
                 <mat-card-title>Engage</mat-card-title>
                 <mat-card-content>
                     <p>
-                        Children’s personality by teaching them to be self-reliant, confident, socially responsible.
+                        children’s personality by teaching them to be self-reliant, confident, socially responsible.
                     </p>
                 </mat-card-content>
             </mat-card>
@@ -76,7 +67,7 @@
                 <mat-card-title>Enlighten</mat-card-title>
                 <mat-card-content>
                     <p>
-                        Children to identify their dream &amp; inspire them to be a leader in the field of their choice.
+                        children to identify their dream &amp; inspire them to be a leader in the field of their choice.
                     </p>
                 </mat-card-content>
             </mat-card>
@@ -169,6 +160,16 @@
                     <a routerLink="/admissions/process" mat-raised-button color="accent">Apply Now</a>
                 </mat-card-actions>
             </mat-card>
+        </div>
+    </div>
+    <div fxFlexAlign="center" class="body-item">
+        <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
+            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
+                <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
+            </a>
+            <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
+                <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
+            </a>
         </div>
     </div>
 </div>

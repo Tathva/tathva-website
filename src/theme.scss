@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 
 $tathva-app-primary: mat-palette($mat-teal);
+$tathva-app-secondary: mat-palette($mat-green);
 $tathva-app-accent:  mat-palette($mat-amber);
 
 // The warn palette is optional (defaults to red).
