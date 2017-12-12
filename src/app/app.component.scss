@@ -168,10 +168,8 @@ footer {
 
   // Scale down the title per screen size
   @media screen and (max-width: $screen-xs) {
-    // Position center to screen
-    left: 0;
-    position: absolute;
-    width: 100vw;
+    // Position center
+    width: 100%;
 
     h1 {
       font-size: 1rem;
