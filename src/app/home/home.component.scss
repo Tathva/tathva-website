@@ -1,6 +1,6 @@
 @import '../../theme';
 
-$swiper-mask: rgba(255, 255, 255, 0.5);
+$swiper-mask: rgba(255, 255, 255, .5);
 $disabled-bg: #808080;
 $disabled-fg: #333;
 
@@ -59,6 +59,18 @@ $disabled-fg: #333;
   }
 }
 
+::ng-deep {
+  .swiper-pagination-bullet {
+    background-color: mat-color($tathva-app-accent);
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: mat-color($tathva-app-primary);
+    transform: scale(1.5);
+  }
+}
+
 .calender-container {
   height: auto;
   max-height: 600px;
@@ -74,25 +86,13 @@ $disabled-fg: #333;
   color: mat-color($tathva-app-accent);
   height: 1.5rem;
   transform: scale(1.5);
-  transition: all .2s ease-in-out;
+  transition: transform .2s ease-in-out;
   width: 1.5rem;
 
   &.disabled {
     background: $disabled-bg;
     color: $disabled-fg;
     transform: scale(0);
-  }
-}
-
-::ng-deep .swiper-pagination {
-  .swiper-pagination-bullet {
-    background-color: mat-color($tathva-app-accent);
-    opacity: 1;
-  }
-
-  .swiper-pagination-bullet-active {
-    background: mat-color($tathva-app-primary);
-    transform: scale(1.5);
   }
 }
 
