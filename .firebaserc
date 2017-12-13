@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "tathva-staging"
+    "default": "tathva-staging",
+    "production": "tathva-website",
+    "staging": "tathva-staging"
   }
 }
