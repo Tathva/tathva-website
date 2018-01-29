@@ -1,0 +1,12 @@
+@import '../../../theme';
+
+.cards-container {
+  width: 100%;
+}
+
+.values-card {
+  background-color: mat-color($tathva-app-secondary);
+  color: $fore-color;
+  max-width: 60vw;
+  width: 60vw;
+}
