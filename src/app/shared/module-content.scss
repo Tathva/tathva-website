@@ -54,3 +54,11 @@ a {
     text-decoration: none;
   }
 }
+
+// To fix mat-lists truncating content on small screens when using multiLine.
+::ng-deep .mat-line {
+  &.force-multi {
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+  }
+}
