@@ -10,8 +10,9 @@
 }
 
 .tbl-container {
+  // Force block display so it works on smaller screens - flex display is broken.
+  display: block !important;
   max-width: 100%;
-  width: 100%;
 }
 
 @media screen and (max-width: $screen-md) {
