@@ -10,3 +10,9 @@
   max-width: 60vw;
   width: 60vw;
 }
+@media screen and (min-width: $screen-sm) {
+
+  .values-card {
+    max-width: 300px;
+  }
+}

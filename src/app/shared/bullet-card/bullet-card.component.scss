@@ -1,0 +1,14 @@
+@import '../../../theme';
+
+.bullet-card {
+  background-color: mat-color($tathva-app-secondary);
+  color: $fore-color;
+  height: 16px;
+  width: 16px;
+  padding: 12px;
+  display: inline-block;
+}
+
+.bullet-content {
+  text-align: center;
+}

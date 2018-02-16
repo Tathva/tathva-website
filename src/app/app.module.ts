@@ -16,9 +16,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { CalendarService } from './services/calendar.service';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
