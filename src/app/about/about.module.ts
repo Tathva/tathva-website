@@ -9,15 +9,12 @@ import { AboutRoutingModule } from './about-routing.module';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { OurVisionComponent } from './our-vision/our-vision.component';
 
-import { SharedModule } from '.././shared/shared.module';
-
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
     AppMaterialModule,
-    AboutRoutingModule,
-    SharedModule
+    AboutRoutingModule
   ],
   declarations: [
     AboutComponent,
