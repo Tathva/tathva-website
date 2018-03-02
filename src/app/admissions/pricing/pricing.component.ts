@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subject } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-pricing',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
-  constructor() { }
+  private fragment: string;
+
+  public pricesOpen() {
+    return this.fragment === 'prices';
+  }
+  public classOpen() {
+    return this.fragment === 'classes';
+  }
+
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+    // By default, the Prices accordion is open if no fragment given.
+    if (this.fragment === null) {
+      this.openAccordion('prices');
+    }
+  }
+
+  openAccordion(val: string) {
+    this.router.navigate([], {fragment: val});
   }
 
 }

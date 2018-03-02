@@ -15,7 +15,7 @@
 
 <mat-accordion>
 
-  <mat-expansion-panel [expanded]="true">
+  <mat-expansion-panel [expanded]="pricesOpen()" (opened)="openAccordion('prices')">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <span class="panel-title">Pricing & Fees</span>
@@ -456,7 +456,7 @@
     </mat-tab-group>
   </mat-expansion-panel>
 
-  <mat-expansion-panel>
+  <mat-expansion-panel [expanded]="classOpen()" (opened)="openAccordion('classes')">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <span class="panel-title">Class Placement</span>
