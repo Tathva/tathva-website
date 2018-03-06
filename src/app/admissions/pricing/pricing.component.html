@@ -3,12 +3,15 @@
 <div class="text-item">
   <p>
     For full pricing information, including our school bus system and monthly or termwise payment options, please refer to our
-    fee structure:
+    fee structure and fee policy documents:
   </p>
-  <p>
-    <a mat-raised-button class="button" color="accent" href="/assets/admissions/Fees structure 2017-2018.pdf" target="_blank"
+  <p fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap="1rem">
+    <a mat-raised-button class="button" color="accent" href="/assets/admissions/Tuition Fee Structure 2018-2019.pdf" target="_blank"
       rel="noopener">
       Download Fee Structure
+    </a>
+    <a mat-raised-button class="button" color="accent" href="/assets/admissions/Fee Policy 2018-2019.pdf" target="_blank" rel="noopener">
+      Download Fee Policy
     </a>
   </p>
 </div>
@@ -23,9 +26,17 @@
     </mat-expansion-panel-header>
     <mat-tab-group class="mat-typography">
 
-      <mat-tab label="Kindergarten">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Kindergarten
+          <br />
+          <small>&nbsp;</small>
+        </ng-template>
         <br />
-        <div class="center-container" fxLayoutAlign="space-around center">
+        <div class="center-container" fxLayoutAlign="space-around center" fxLayout="column">
+          <p>
+            <em class="tax-line">All prices include tax @ 8%.</em>
+          </p>
           <div class="tbl-container" fxLayoutAlign="space-around center">
             <table class="matl-data-table matl-shadow--2dp fee-table">
               <thead>
@@ -124,9 +135,17 @@
         <br />
       </mat-tab>
 
-      <mat-tab label="Primary">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Primary
+          <br />
+          <small>Grades 1-5</small>
+        </ng-template>
         <br />
-        <div class="center-container" fxLayoutAlign="space-around center">
+        <div class="center-container" fxLayoutAlign="space-around center" fxLayout="column">
+          <p>
+            <em class="tax-line">All prices include tax @ 8%.</em>
+          </p>
           <div class="tbl-container" fxLayoutAlign="space-around center">
             <table class="matl-data-table matl-shadow--2dp fee-table">
               <thead>
@@ -212,6 +231,20 @@
                 </tr>
                 <tr>
                   <td class="matl-data-table__cell--non-numeric">
+                    Facilities Fee
+                    <br />
+                    <span class="mat-caption">
+                      <i>For Grades 4 & above</i>
+                    </span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>¥195,048</td>
+                  <td>¥195,048</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
                     Miscellaneous
                     <br />
                     <span class="mat-caption">
@@ -237,8 +270,8 @@
                   <th>¥884,724</th>
                   <th>¥886,452</th>
                   <th>¥886,560</th>
-                  <th>¥885,361</th>
-                  <th>¥884,389</th>
+                  <th>¥1,080,409</th>
+                  <th>¥1,079,437</th>
                 </tr>
               </tbody>
             </table>
@@ -248,9 +281,17 @@
 
       </mat-tab>
 
-      <mat-tab label="Secondary">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          Secondary
+          <br />
+          <small>Grades 6-8</small>
+        </ng-template>
         <br />
-        <div class="center-container" fxLayoutAlign="space-around center">
+        <div class="center-container" fxLayoutAlign="space-around center" fxLayout="column">
+          <p>
+            <em class="tax-line">All prices include tax @ 8%.</em>
+          </p>
           <div class="tbl-container" fxLayoutAlign="space-around center">
             <table class="matl-data-table matl-shadow--2dp fee-table">
               <thead>
@@ -324,6 +365,18 @@
                 </tr>
                 <tr>
                   <td class="matl-data-table__cell--non-numeric">
+                    Facilities Fee
+                    <br />
+                    <span class="mat-caption">
+                      <i>For Grades 4 & above</i>
+                    </span>
+                  </td>
+                  <td>¥195,048</td>
+                  <td>¥195,048</td>
+                  <td>¥195,048</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
                     Miscellaneous
                     <br />
                     <span class="mat-caption">
@@ -344,9 +397,9 @@
                       <i>including tax</i>
                     </span>
                   </th>
-                  <th>¥949,729</th>
-                  <th>¥944,113</th>
-                  <th>¥944,869</th>
+                  <th>¥1,144,777</th>
+                  <th>¥1,139,161</th>
+                  <th>¥1,139,917</th>
                 </tr>
               </tbody>
             </table>
@@ -355,9 +408,17 @@
         <br />
       </mat-tab>
 
-      <mat-tab label="IGCSE">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          IGCSE
+          <br />
+          <small>Grades 9 & 10</small>
+        </ng-template>
         <br />
-        <div class="center-container" fxLayoutAlign="space-around center">
+        <div class="center-container" fxLayoutAlign="space-around center" fxLayout="column">
+          <p>
+            <em class="tax-line">All prices include tax @ 8%.</em>
+          </p>
           <div class="tbl-container" fxLayoutAlign="space-around center">
             <table class="matl-data-table matl-shadow--2dp fee-table">
               <thead>
@@ -425,6 +486,17 @@
                 </tr>
                 <tr>
                   <td class="matl-data-table__cell--non-numeric">
+                    Facilities Fee
+                    <br />
+                    <span class="mat-caption">
+                      <i>For Grades 4 & above</i>
+                    </span>
+                  </td>
+                  <td>¥195,048</td>
+                  <td>¥195,048</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
                     Miscellaneous
                     <br />
                     <span class="mat-caption">
@@ -444,8 +516,126 @@
                       <i>including tax</i>
                     </span>
                   </th>
-                  <th>¥1,158,018</th>
-                  <th>¥1,158,018</th>
+                  <th>¥1,353,066</th>
+                  <th>¥1,353,066</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br />
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          A-Level
+          <br />
+          <small>Grades 11 & 12</small>
+        </ng-template>
+        <br />
+        <div class="center-container" fxLayoutAlign="space-around center" fxLayout="column">
+          <p>
+            <em class="tax-line">All prices include tax @ 8%.</em>
+          </p>
+          <div class="tbl-container" fxLayoutAlign="space-around center">
+            <table class="matl-data-table matl-shadow--2dp fee-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Grade 11</th>
+                  <th>Grade 12</th>
+                </tr>
+              </thead>
+
+              <tbody class="sub-table-section">
+                <tr>
+                  <th class="matl-data-table__cell--non-numeric" colspan="3">One-Time Fees</th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
+                    Admissions Application
+                    <br />
+                    <span class="mat-caption">
+                      <i>Paid during admin inquiry process</i>
+                    </span>
+                  </td>
+                  <td>¥6,500</td>
+                  <td>¥6,500</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">Building Fee</td>
+                  <td>¥64,800</td>
+                  <td>¥64,800</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">Registration Fee</td>
+                  <td>¥43,200</td>
+                  <td>¥43,200</td>
+                </tr>
+              </tbody>
+
+              <tbody class="sub-table-section">
+                <tr>
+                  <th class="matl-data-table__cell--non-numeric" colspan="3">Annual Fees
+                    <span class="mat-caption">
+                      <i>Tuition & Miscellaneous paid in installments as applicable.</i>
+                    </span>
+                  </th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">Tuition Fee</td>
+                  <td>¥1,425,600</td>
+                  <td>¥1,425,600</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
+                    Books
+                    <br />
+                    <span class="mat-caption">
+                      <i>Will change depending on choice of Second Language lessons</i>
+                    </span>
+                  </td>
+                  <td>*¥71,734</td>
+                  <td>*¥71,734</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
+                    Facilities Fee
+                    <br />
+                    <span class="mat-caption">
+                      <i>For Grades 4 & above</i>
+                    </span>
+                  </td>
+                  <td>¥195,048</td>
+                  <td>¥195,048</td>
+                </tr>
+                <tr>
+                  <td class="matl-data-table__cell--non-numeric">
+                    Miscellaneous
+                    <br />
+                    <span class="mat-caption">
+                      <i>Activities & Events, e-Learning, Insurance.</i>
+                    </span>
+                  </td>
+                  <td>¥32,184</td>
+                  <td>¥32,184</td>
+                </tr>
+              </tbody>
+
+              <tbody class="sub-table-total">
+                <tr>
+                  <th class="matl-data-table__cell--non-numeric">
+                    Total in Yen
+                    <span class="mat-caption">
+                      <i>including tax</i>
+                    </span>
+                  </th>
+                  <th>¥1,724,566</th>
+                  <th>¥1,724,566</th>
                 </tr>
               </tbody>
             </table>

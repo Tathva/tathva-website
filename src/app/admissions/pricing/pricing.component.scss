@@ -21,7 +21,6 @@
     width: 100%;
     overflow-x: auto;
   }
-
 }
 
 .sub-table-section {
@@ -30,4 +29,15 @@
 
 .sub-table-total {
   background-color: mat-color($tathva-app-primary, 100);
+}
+
+// We need dual-lined tabs
+::ng-deep {
+  .mat-tab-label {
+    display: grid !important;
+  }
+}
+
+.tax-line {
+  color: mat-color($tathva-app-accent, 500);
 }
