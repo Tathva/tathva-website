@@ -22,8 +22,9 @@ export class PricingComponent implements OnInit {
 
   ngOnInit() {
     this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+    console.log(this.fragment);
     // By default, the Prices accordion is open if no fragment given.
-    if (this.fragment === null) {
+    if (this.fragment === null || this.fragment === undefined) {
       this.openAccordion('prices');
     }
   }
