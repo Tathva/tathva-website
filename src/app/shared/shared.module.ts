@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AppMaterialModule } from './../app-material.module';
 
 import { CalendarCardComponent } from './calendar-card/calendar-card.component';
+import { LetterCardComponent } from './letter-card/letter-card.component';
 
 @NgModule({
     imports: [
@@ -12,10 +13,12 @@ import { CalendarCardComponent } from './calendar-card/calendar-card.component';
         AppMaterialModule
     ],
     declarations: [
-        CalendarCardComponent
-    ],
+        CalendarCardComponent,
+        LetterCardComponent
+],
     exports: [
-        CalendarCardComponent
+        CalendarCardComponent,
+        LetterCardComponent
     ]
 })
 export class SharedModule { }
