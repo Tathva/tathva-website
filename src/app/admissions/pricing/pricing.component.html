@@ -110,9 +110,256 @@
                       <i>Activities & Events, e-Learning, Insurance.</i>
                     </span>
                   </td>
-                  <td>¥23,544</td>
-                  <td>¥23,544</td>
-                  <td>¥26,676</td>
+                  <td>¥23,544
+                    <app-letter-card color="accent" [mdePopoverTriggerFor]="cubsBreakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                    <mde-popover #cubsBreakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                      <mat-card>
+                        <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                          <thead>
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                            </tr>
+                          </thead>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Orientations</td>
+                              <td>¥800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Drills</td>
+                              <td>¥300</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                              <td>¥1200</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Theme Party</td>
+                              <td>¥1000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Sports Day</td>
+                              <td>¥2000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                              <td>¥3000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Winter Concert</td>
+                              <td>¥2500</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">IT</td>
+                              <td>¥3500</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                              <td>¥5000</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-total">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Total</td>
+                              <td>¥21,800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Tax</td>
+                              <td>¥1,744</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </mat-card>
+                    </mde-popover>
+                  </td>
+                  <td>¥23,544
+                    <app-letter-card color="accent" [mdePopoverTriggerFor]="pandasBreakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                    <mde-popover #pandasBreakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                      <mat-card>
+                        <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                          <thead>
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                            </tr>
+                          </thead>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Orientations</td>
+                              <td>¥800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Drills</td>
+                              <td>¥300</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                              <td>¥1200</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Theme Party</td>
+                              <td>¥1000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Sports Day</td>
+                              <td>¥2000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                              <td>¥3000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Winter Concert</td>
+                              <td>¥2500</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">IT</td>
+                              <td>¥3500</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                              <td>¥5000</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-total">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Total</td>
+                              <td>¥21,800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Tax</td>
+                              <td>¥1,744</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </mat-card>
+                    </mde-popover>
+                  </td>
+                  <td>¥27,864
+                    <app-letter-card color="accent" [mdePopoverTriggerFor]="dolphinsBreakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                    <mde-popover #dolphinsBreakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                      <mat-card>
+                        <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                          <thead>
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                            </tr>
+                          </thead>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Orientations</td>
+                              <td>¥800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Drills</td>
+                              <td>¥300</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                              <td>¥2300</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Theme Party</td>
+                              <td>¥1000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Sports Day</td>
+                              <td>¥2000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                              <td>¥3000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Winter Concert</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Community Outreach</td>
+                              <td>¥400</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">IT</td>
+                              <td>¥6000</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                              <td>¥5000</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-total">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Total</td>
+                              <td>¥25,800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Tax</td>
+                              <td>¥2,064</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </mat-card>
+                    </mde-popover>
+                  </td>
                 </tr>
               </tbody>
 
@@ -126,7 +373,7 @@
                   </th>
                   <th>¥809,372</th>
                   <th>¥812,850</th>
-                  <th>¥825,706</th>
+                  <th>¥826,890</th>
                 </tr>
               </tbody>
             </table>
@@ -251,11 +498,461 @@
                       <i>Activities & Events, e-Learning, Insurance.</i>
                     </span>
                   </td>
-                  <td>¥32,724</td>
-                  <td>¥32,724</td>
-                  <td>¥32,724</td>
-                  <td>¥32,940</td>
-                  <td>¥33,804</td>
+                  <td>¥34,344
+                    <app-letter-card color="accent" [mdePopoverTriggerFor]="grade1Breakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                    <mde-popover #grade1Breakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                      <mat-card>
+                        <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                          <thead>
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                            </tr>
+                          </thead>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Orientation/PTC</td>
+                              <td>¥800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Drills</td>
+                              <td>¥600</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                              <td><em>actuals</em></td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Exams</td>
+                              <td>¥2000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Spelling Bee</td>
+                              <td>¥500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Project Week</td>
+                              <td>¥500</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Sports & P.E</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                              <td>¥2500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                              <td>¥3000</td>
+                            </tr>
+                          </tbody>
+                          <tbody class="sub-table-section">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">IT</td>
+                              <td>¥10,000</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Science Lab</td>
+                              <td>¥2,500</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Library Fee</td>
+                              <td>¥900</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                              <td>¥6000</td>
+                            </tr>
+                          <tbody class="sub-table-total">
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Total</td>
+                              <td>¥31,800</td>
+                            </tr>
+                            <tr>
+                              <td class="matl-data-table__cell--non-numeric">Tax</td>
+                              <td>¥2,544</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </mat-card>
+                    </mde-popover>
+                  </td>
+                  <td>¥34,344
+                      <app-letter-card color="accent" [mdePopoverTriggerFor]="grade2Breakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                      <mde-popover #grade2Breakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                        <mat-card>
+                          <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                            <thead>
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                              </tr>
+                            </thead>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Orientation/PTC</td>
+                                <td>¥800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Drills</td>
+                                <td>¥600</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                                <td><em>actuals</em></td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Exams</td>
+                                <td>¥2000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Spelling Bee</td>
+                                <td>¥500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Project Week</td>
+                                <td>¥500</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Sports & P.E</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                                <td>¥3000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">IT</td>
+                                <td>¥10,000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Science Lab</td>
+                                <td>¥2,500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Library Fee</td>
+                                <td>¥900</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                                <td>¥6000</td>
+                              </tr>
+                            <tbody class="sub-table-total">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Total</td>
+                                <td>¥31,800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Tax</td>
+                                <td>¥2,544</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </mat-card>
+                      </mde-popover>
+                    </td>
+                  <td>¥34,344
+                      <app-letter-card color="accent" [mdePopoverTriggerFor]="grade3Breakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                      <mde-popover #grade3Breakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                        <mat-card>
+                          <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                            <thead>
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                              </tr>
+                            </thead>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Orientation/PTC</td>
+                                <td>¥800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Drills</td>
+                                <td>¥600</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                                <td><em>actuals</em></td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Exams</td>
+                                <td>¥2000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Spelling Bee</td>
+                                <td>¥500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Project Week</td>
+                                <td>¥500</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Sports & P.E</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                                <td>¥3000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">IT</td>
+                                <td>¥10,000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Science Lab</td>
+                                <td>¥2,500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Library Fee</td>
+                                <td>¥900</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                                <td>¥6000</td>
+                              </tr>
+                            <tbody class="sub-table-total">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Total</td>
+                                <td>¥31,800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Tax</td>
+                                <td>¥2,544</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </mat-card>
+                      </mde-popover>
+                    </td>
+                  <td>¥35,424
+                      <app-letter-card color="accent" [mdePopoverTriggerFor]="grade4Breakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                      <mde-popover #grade4Breakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                        <mat-card>
+                          <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                            <thead>
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                              </tr>
+                            </thead>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Orientation/PTC</td>
+                                <td>¥800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Drills</td>
+                                <td>¥600</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                                <td><em>actuals</em></td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Exams</td>
+                                <td>¥2000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Spelling Bee</td>
+                                <td>¥500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Project Week</td>
+                                <td>¥500</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Sports & P.E</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                                <td>¥3000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">IT</td>
+                                <td>¥10,000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Science Lab</td>
+                                <td>¥3,500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Library Fee</td>
+                                <td>¥900</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                                <td>¥6000</td>
+                              </tr>
+                            <tbody class="sub-table-total">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Total</td>
+                                <td>¥32,800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Tax</td>
+                                <td>¥2,624</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </mat-card>
+                      </mde-popover>
+                    </td>
+                  <td>¥35,424
+                      <app-letter-card color="accent" [mdePopoverTriggerFor]="grade5Breakdown" mdePopoverTriggerOn="click">?</app-letter-card>
+                      <mde-popover #grade5Breakdown="mdePopover" [mdePopoverOverlapTrigger]="false">
+                        <mat-card>
+                          <table class="matl-data-table matl-shadow--2dp fee-table breakdown-table">
+                            <thead>
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Breakdown</th>
+                              </tr>
+                            </thead>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Activities</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Orientation/PTC</td>
+                                <td>¥800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Drills</td>
+                                <td>¥600</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Field Trip</td>
+                                <td><em>actuals</em></td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Exams</td>
+                                <td>¥2000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Spelling Bee</td>
+                                <td>¥500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Project Week</td>
+                                <td>¥500</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <th class="matl-data-table__cell--non-numeric" colspan="2">Events</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Sports & P.E</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Annual Day</td>
+                                <td>¥2500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Autumn Fair</td>
+                                <td>¥3000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="sub-table-section">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">IT</td>
+                                <td>¥10,000</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Science Lab</td>
+                                <td>¥3,500</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Library Fee</td>
+                                <td>¥900</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Insurance</td>
+                                <td>¥6000</td>
+                              </tr>
+                            <tbody class="sub-table-total">
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Total</td>
+                                <td>¥32,800</td>
+                              </tr>
+                              <tr>
+                                <td class="matl-data-table__cell--non-numeric">Tax</td>
+                                <td>¥2,624</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </mat-card>
+                      </mde-popover>
+                    </td>
                 </tr>
               </tbody>
 
@@ -267,11 +964,11 @@
                       <i>including tax</i>
                     </span>
                   </th>
-                  <th>¥884,724</th>
-                  <th>¥886,452</th>
-                  <th>¥886,560</th>
-                  <th>¥1,080,409</th>
-                  <th>¥1,079,437</th>
+                  <th>¥886,344</th>
+                  <th>¥888,072</th>
+                  <th>¥888,180</th>
+                  <th>¥1,082,893</th>
+                  <th>¥1,081,057</th>
                 </tr>
               </tbody>
             </table>

@@ -41,3 +41,16 @@
 .tax-line {
   color: mat-color($tathva-app-accent, 500);
 }
+
+// Force thin-table lines.
+.breakdown-table {
+  thead,
+  tbody {
+    tr,
+    td,
+    th {
+      height: 1.25rem !important;
+      padding: 4px 1rem;
+    }
+  }
+}

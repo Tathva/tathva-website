@@ -8,6 +8,7 @@ import {
     MatListModule,
     MatCardModule,
     MatTabsModule,
+    MatChipsModule,
     MatExpansionModule
 } from '@angular/material';
 
@@ -21,6 +22,7 @@ import {
         MatListModule,
         MatCardModule,
         MatTabsModule,
+        MatChipsModule,
         MatExpansionModule
     ],
     exports: [
@@ -32,6 +34,7 @@ import {
         MatListModule,
         MatCardModule,
         MatTabsModule,
+        MatChipsModule,
         MatExpansionModule
     ],
 })
