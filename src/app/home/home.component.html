@@ -6,8 +6,7 @@
 <div [swiper]="config" class="swiper-container">
     <div class="swiper-wrapper">
         <div *ngFor="let image of images" class="swiper-slide">
-            <img data-src="{{image}}_quote.jpg" class="swiper-lazy"
-                 data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
+            <img data-src="{{image}}_quote.jpg" class="swiper-lazy" data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
                               {{image}}_sm.jpg 640w, {{image}}.jpg 768w, {{image}}.jpg 3x">
             <div class="swiper-lazy-preloader"></div>
         </div>
@@ -23,9 +22,7 @@
 </div>
 
 <div class="mat-typography page-body" fxLayout="column" fxLayoutWrap>
-    <div class="heading-item mat-elevation-z3">
-        <h1>Our Vision</h1>
-    </div>
+    <h1 class="content-title">Our Vision</h1>
     <div fxFlexAlign="center" class="body-item">
         <p>
             At Tathva we aspire to create culturally sensitive, environmentally responsible global citizens who are prepared and capable
@@ -76,44 +73,27 @@
 
     <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
 
-    <div class="heading-item mat-elevation-z3">
-        <h1>Upcoming Events</h1>
-    </div>
+    <h1 class="content-title">Upcoming Events</h1>
     <div class="upcoming-container">
         <div class="calendar" fxLayout="column" fxLayoutAlign="stretch">
             <div id="container">
-                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm
-                    [items]="calEvents" 
-                    [width]="810" 
-                    [$prev]="prev" 
-                    [$next]="next"
-                    [$item]="item"
-                    (onSelectedItem)="selectedIndex = $event.index">
+                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm [items]="calEvents" [width]="810" [$prev]="prev"
+                    [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
                 </div>
-                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm
-                    [items]="calEvents" 
-                    [width]="232" 
-                    [$prev]="prev" 
-                    [$next]="next"
-                    [$item]="item"
-                    (onSelectedItem)="selectedIndex = $event.index">
+                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm [items]="calEvents" [width]="232" [$prev]="prev"
+                    [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
                 </div>
 
                 <ng-template #prev>
-                    <div class="cal-button-prev mat-elevation-z2"
-                        [ngClass]="{'disabled': (selectedIndex == 0)}">
+                    <div class="cal-button-prev mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex == 0)}">
                         <mat-icon (click)="nextCal()">keyboard_arrow_left</mat-icon>
                     </div>
                 </ng-template>
                 <ng-template #next>
-                    <div fxShow="false" fxShow.gt-sm 
-                        class="cal-button-next mat-elevation-z2"
-                        [ngClass]="{'disabled': (selectedIndex >= 8)}">
+                    <div fxShow="false" fxShow.gt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 8)}">
                         <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
                     </div>
-                    <div fxShow="false" fxShow.lt-sm 
-                        class="cal-button-next mat-elevation-z2"
-                        [ngClass]="{'disabled': (selectedIndex >= 9)}">
+                    <div fxShow="false" fxShow.lt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 9)}">
                         <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
                     </div>
                 </ng-template>

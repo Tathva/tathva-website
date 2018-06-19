@@ -6,7 +6,7 @@ import { CalendarService } from '.././services/calendar.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './home.component.scss']
+  styleUrls: ['./home.component.css', './home.component.scss', '.././shared/module-content.scss']
 })
 export class HomeComponent implements OnInit {
 
