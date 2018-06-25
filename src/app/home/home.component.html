@@ -1,155 +1,155 @@
 <div class="title mat-typography" fxLayout="column" fxLayoutAlign="center center">
-    <img src="../assets/logo_title.png" />
-    <h4>Educate &#8226; Engage &#8226; Enlighten</h4>
+  <img src="../assets/logo_title.png" />
+  <h4>Educate &#8226; Engage &#8226; Enlighten</h4>
 </div>
 
 <div [swiper]="config" class="swiper-container">
-    <div class="swiper-wrapper">
-        <div *ngFor="let image of images" class="swiper-slide">
-            <img data-src="{{image}}_quote.jpg" class="swiper-lazy" data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
+  <div class="swiper-wrapper">
+    <div *ngFor="let image of images" class="swiper-slide">
+      <img data-src="{{image}}_quote.jpg" class="swiper-lazy" data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
                               {{image}}_sm.jpg 640w, {{image}}.jpg 768w, {{image}}.jpg 3x">
-            <div class="swiper-lazy-preloader"></div>
-        </div>
+      <div class="swiper-lazy-preloader"></div>
     </div>
+  </div>
 
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev">
-        <mat-icon>keyboard_arrow_left</mat-icon>
-    </div>
-    <div class="swiper-button-next">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-    </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </div>
+  <div class="swiper-button-next">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </div>
 </div>
 
 <div class="mat-typography page-body" fxLayout="column" fxLayoutWrap>
-    <h1 class="content-title">Our Vision</h1>
-    <div fxFlexAlign="center" class="body-item">
-        <p>
-            At Tathva we aspire to create culturally sensitive, environmentally responsible global citizens who are prepared and capable
-            of becoming the leaders of tomorrow's generation.
-        </p>
-        <p>
-            Tathva International School - Your future starts here.
-        </p>
-        <!-- <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" mat-raised-button color="accent">Read More</a> -->
-        <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
-            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
-                <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
-            </a>
-            <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
-                <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
-            </a>
-        </div>
+  <h1 class="content-title">Our Vision</h1>
+  <div fxFlexAlign="center" class="body-item">
+    <p>
+      At Tathva we aspire to create culturally sensitive, environmentally responsible global citizens who are prepared and capable
+      of becoming the leaders of tomorrow's generation.
+    </p>
+    <p>
+      Tathva International School - Your future starts here.
+    </p>
+    <!-- <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" mat-raised-button color="accent">Read More</a> -->
+    <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
+      <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
+        <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
+      </a>
+      <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
+        <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
+      </a>
     </div>
+  </div>
 
-    <div class="cards-container">
-        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
-            <mat-card class="values-card" fxFlex>
-                <mat-card-title>Educate</mat-card-title>
-                <mat-card-content>
-                    <p>
-                        children with strong fundamentals and encourage them to apply and experience their learnings.
-                    </p>
-                </mat-card-content>
-            </mat-card>
-            <mat-card class="values-card" fxFlex>
-                <mat-card-title>Engage</mat-card-title>
-                <mat-card-content>
-                    <p>
-                        children’s personality by teaching them to be self-reliant, confident, socially responsible.
-                    </p>
-                </mat-card-content>
-            </mat-card>
-            <mat-card class="values-card" fxFlex>
-                <mat-card-title>Enlighten</mat-card-title>
-                <mat-card-content>
-                    <p>
-                        children to identify their dream &amp; inspire them to be a leader in the field of their choice.
-                    </p>
-                </mat-card-content>
-            </mat-card>
-        </div>
+  <div class="cards-container">
+    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+      <mat-card class="values-card" fxFlex>
+        <mat-card-title>Educate</mat-card-title>
+        <mat-card-content>
+          <p>
+            children with strong fundamentals and encourage them to apply and experience their learnings.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="values-card" fxFlex>
+        <mat-card-title>Engage</mat-card-title>
+        <mat-card-content>
+          <p>
+            children’s personality by teaching them to be self-reliant, confident, socially responsible.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="values-card" fxFlex>
+        <mat-card-title>Enlighten</mat-card-title>
+        <mat-card-content>
+          <p>
+            children to identify their dream &amp; inspire them to be a leader in the field of their choice.
+          </p>
+        </mat-card-content>
+      </mat-card>
     </div>
+  </div>
 
-    <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
+  <div parallax [config]="paraConf" class="mat-elevation-z1 parallax" id="parallax-1"></div>
 
-    <h1 class="content-title">Upcoming Events</h1>
-    <div class="upcoming-container">
-        <div class="calendar" fxLayout="column" fxLayoutAlign="stretch">
-            <div id="container">
-                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm [items]="calEvents" [width]="810" [$prev]="prev"
-                    [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
-                </div>
-                <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm [items]="calEvents" [width]="232" [$prev]="prev"
-                    [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
-                </div>
-
-                <ng-template #prev>
-                    <div class="cal-button-prev mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex == 0)}">
-                        <mat-icon (click)="nextCal()">keyboard_arrow_left</mat-icon>
-                    </div>
-                </ng-template>
-                <ng-template #next>
-                    <div fxShow="false" fxShow.gt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 8)}">
-                        <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
-                    </div>
-                    <div fxShow="false" fxShow.lt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 9)}">
-                        <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
-                    </div>
-                </ng-template>
-                <ng-template #item let-item let-i="index">
-                    <app-calendar-card [item]="item"></app-calendar-card>
-                </ng-template>
-            </div>
+  <h1 class="content-title">Upcoming Events</h1>
+  <div class="upcoming-container">
+    <div class="calendar" fxLayout="column" fxLayoutAlign="stretch">
+      <div id="container">
+        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm [items]="calEvents" [width]="810" [$prev]="prev"
+          [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
         </div>
-    </div>
-
-    <div parallax [config]="cardParaConf" class="mat-elevation-z1 cards-container links-parallax">
-
-        <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
-            <mat-card class="links-card" fxLayout="column">
-                <mat-card-title>Meet Our Leaders</mat-card-title>
-                <mat-card-content fxFlex>
-                    <p>
-                        A top class education requires world class educators.
-                    </p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <a routerLink="/about/team" mat-raised-button color="accent">Read More</a>
-                </mat-card-actions>
-            </mat-card>
-
-            <mat-card class="links-card" fxLayout="column">
-                <mat-card-title>Board and Affiliations</mat-card-title>
-                <mat-card-content fxFlex>
-                    <p>
-                        Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint, Cambridge Checkpoint,
-                        IGCSE, O Level, AS/A Level (including science practical components)
-                    </p>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card class="links-card" fxLayout="column">
-                <mat-card-title>Apply Today</mat-card-title>
-                <mat-card-content fxFlex>
-                    <p>
-                        Find out how to apply and start your child's future with us.
-                    </p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <a routerLink="/admissions/process" mat-raised-button color="accent">Apply Now</a>
-                </mat-card-actions>
-            </mat-card>
+        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm [items]="calEvents" [width]="232" [$prev]="prev"
+          [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
         </div>
+
+        <ng-template #prev>
+          <div class="cal-button-prev mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex == 0)}">
+            <mat-icon (click)="nextCal()">keyboard_arrow_left</mat-icon>
+          </div>
+        </ng-template>
+        <ng-template #next>
+          <div fxShow="false" fxShow.gt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 8)}">
+            <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
+          </div>
+          <div fxShow="false" fxShow.lt-sm class="cal-button-next mat-elevation-z2" [ngClass]="{'disabled': (selectedIndex >= 9)}">
+            <mat-icon (click)="nextCal()">keyboard_arrow_right</mat-icon>
+          </div>
+        </ng-template>
+        <ng-template #item let-item let-i="index">
+          <app-calendar-card [item]="item"></app-calendar-card>
+        </ng-template>
+      </div>
     </div>
-    <div fxFlexAlign="center" class="body-item">
-        <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
-            <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
-                <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
-            </a>
-            <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
-                <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
-            </a>
-        </div>
+  </div>
+
+  <div parallax [config]="cardParaConf" class="mat-elevation-z1 cards-container links-parallax">
+
+    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+      <mat-card class="links-card" fxLayout="column">
+        <mat-card-title>Meet Our Leaders</mat-card-title>
+        <mat-card-content fxFlex>
+          <p>
+            A top class education requires world class educators.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a routerLink="/about/team" mat-raised-button color="accent">Read More</a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="links-card" fxLayout="column">
+        <mat-card-title>Board and Affiliations</mat-card-title>
+        <mat-card-content fxFlex>
+          <p>
+            Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint, Cambridge Checkpoint,
+            IGCSE, O Level, AS/A Level (including science practical components)
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="links-card" fxLayout="column">
+        <mat-card-title>Apply Today</mat-card-title>
+        <mat-card-content fxFlex>
+          <p>
+            Find out how to apply and start your child's future with us.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a routerLink="/admissions/process" mat-raised-button color="accent">Apply Now</a>
+        </mat-card-actions>
+      </mat-card>
     </div>
+  </div>
+  <div fxFlexAlign="center" class="body-item">
+    <div fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="1em" fxLayoutAlign="space-around center" class="img-row">
+      <a href="http://www.cie.org.uk/" target="_blank" rel="noopener" name="Camvbridge International Examinations">
+        <img src="assets/home/cie_logo.png" class="affilate-logo" alt="Cambridge International Examinations">
+      </a>
+      <a href="https://ipc.education/" target="_blank" rel="noopener" name="International Preschool Curriculum">
+        <img src="assets/home/ipc_logo.png" class="affilate-logo" alt="International Preschool Curriculum">
+      </a>
+    </div>
+  </div>
 </div>

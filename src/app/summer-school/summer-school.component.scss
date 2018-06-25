@@ -1,0 +1,54 @@
+@import '../../theme';
+h1 {
+  color: mat-color($tathva-app-primary);
+  font-family: $brand-font;
+  font-weight: 500;
+  &.tagline {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media screen and (max-width: $screen-md) {
+    &.tagline {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+h2 {
+  color: mat-color($tathva-app-accent);
+  font-family: $brand-font;
+}
+
+.title {
+  align-content: center;
+  text-align: center;
+  padding: 1rem;
+  img {
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.signup {
+  line-height: 2rem;
+  max-width: 90vw;
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
+.contact-list {
+  max-width: 90vw;
+  @media screen and (max-width: $screen-md) {
+    font-size: 1rem;
+  }
+}
+
+.activity-image {
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+}

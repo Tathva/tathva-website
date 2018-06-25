@@ -17,11 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CalendarService } from './services/calendar.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuItemComponent,
-    SideItemComponent
-],
+  declarations: [AppComponent, MenuItemComponent, SideItemComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -29,9 +25,9 @@ import { CalendarService } from './services/calendar.service';
     FlexLayoutModule,
     HttpClientModule,
     SharedModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

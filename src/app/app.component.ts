@@ -1,17 +1,23 @@
-import { Component, OnInit, OnDestroy , ViewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ViewChild,
+  ElementRef
+} from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { Subscription } from 'rxjs/Rx';
 import 'rxjs/add/operator/filter';
 
 interface Link {
-  url: string,
-  name: string
+  url: string;
+  name: string;
 }
 
 interface LinkGroup {
-  title: string,
-  links: Link[]
+  title: string;
+  links: Link[];
 }
 
 @Component({
@@ -19,7 +25,7 @@ interface LinkGroup {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, OnDestroy  {
+export class AppComponent implements OnInit, OnDestroy {
   routerSubscription: Subscription;
   @ViewChild('site') site: ElementRef;
 
@@ -34,7 +40,7 @@ export class AppComponent implements OnInit, OnDestroy  {
         {
           url: '/about/team',
           name: 'Our Team'
-        },
+        }
       ]
     },
     {
@@ -51,7 +57,7 @@ export class AppComponent implements OnInit, OnDestroy  {
         {
           url: '/education/secondary',
           name: 'Secondary & IGCSE'
-        },
+        }
       ]
     },
     {
@@ -64,7 +70,7 @@ export class AppComponent implements OnInit, OnDestroy  {
         {
           url: '/admissions/process',
           name: 'Our Process'
-        },
+        }
         // {
         //   url: '/admissions/apply',
         //   name: 'Apply for Admission'
@@ -102,7 +108,7 @@ export class AppComponent implements OnInit, OnDestroy  {
         {
           url: '/contact/employment',
           name: 'Employment'
-        },
+        }
       ]
     }
   ];
@@ -110,8 +116,7 @@ export class AppComponent implements OnInit, OnDestroy  {
   public isOpen = false;
   public menuIcon = 'menu';
 
-  constructor(private router: Router) {
-  };
+  constructor(public router: Router) {}
 
   ngOnInit() {
     if (isPlatformBrowser) {

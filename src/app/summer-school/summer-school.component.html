@@ -1,0 +1,165 @@
+<div class="title mat-typography" fxLayout="column" fxLayoutAlign="center center">
+  <img src="../assets/logo_title.png" />
+  <h1 class="tagline">Summer School Around The World
+    <br />
+    <small>英語で世界とつながるサマースクール</small>
+  </h1>
+  <h2>JULY 30 - AUG 3&nbsp;&&nbsp;AUG 20 - 24
+    <br />
+    <small>7月 30日 - 8月 3日&nbsp;&&nbsp;8月 20日 - 24日</small>
+  </h2>
+  <a class="signup" mat-raised-button color="primary" href="https://goo.gl/forms/rZzdfRYAMF72sWZi2" target="_blank" rel="noopener">
+    To register for Tathva Summer School, click here.
+    <br />
+    <span>タトゥワサマースクールのお申し込みは、こちらをクリックしてください</span>
+  </a>
+</div>
+
+<div class="mat-typography page-body" fxLayout="column" fxLayoutWrap>
+
+  <div class="body-item" fxLayout="column" fxLayoutWrap fxLayoutGap="1rem">
+    <h1 class="content-title" fxLayoutAlign="start end">
+      <span fxFlex="grow">Information</span>
+      <span fxFlex="none">情報</span>
+    </h1>
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="start start" fxLayoutAlign.gt-md="space-between start" fxLayoutGap="1rem">
+      <div fxFlex="50%">Ages 3 to 18
+        <br/>¥30,000 for 1 week
+        <br/>¥55,000 for 2 weeks
+        <br/>Earlybird discount!
+        <br/>Referral/sibling discount!</div>
+      <div fxFlex="50%">対象年齢：３歳　～　１８歳
+        <br/>料金：一週間三万円
+        <br/>　　　二週間五万五千円
+        <br/>早期申し込み割引あり
+        <br/>友達紹介や兄弟で申し込んでも割引あり
+      </div>
+    </div>
+    <div>
+      <mat-divider></mat-divider>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="start start" fxLayoutAlign.gt-md="space-between start" fxLayoutGap="1rem">
+      <div fxFlex="50%">Monday ~ Friday
+        <br/>9am ~ 2pm
+        <br/>Aftercare available!
+      </div>
+      <div fxFlex="50%">月曜日　～　金曜日
+        <br/>午前９時　～　午後２時
+        <br/>お迎えが来るまでお子さんをお預かりいたします
+      </div>
+    </div>
+    <div>
+      <mat-divider></mat-divider>
+    </div>
+    <div fxLayoutAlign="start center" fxLayout="column">
+      <h2 fxFlex="100%" fxLayoutGap="2rem" style="width:50%">
+        <span fxFlex="grow">Contact</span>
+        <span fxFlex="none">連絡先</span>
+      </h2>
+      <mat-list class="contact-list" dense *ngIf="isMobile();">
+        <a mat-list-item href="tel:08041665830">
+          <mat-icon mat-list-icon>phone</mat-icon>
+          <span mat-line>080-4166-5830</span>
+        </a>
+        <a mat-list-item href="mailto:info@tathva.ed.jp">
+          <mat-icon mat-list-icon>mail</mat-icon>
+          <span mat-line>info@tathva.ed.jp</span>
+        </a>
+        <a mat-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+          <mat-icon mat-list-icon>pin_drop</mat-icon>
+          <p mat-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+            4-1-1 Higashi Komatsugawa,
+          </p>
+          <p mat-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
+        </a>
+      </mat-list>
+      <mat-list class="contact-list" *ngIf="!isMobile();">
+        <a mat-list-item href="tel:08041665830">
+          <mat-icon mat-list-icon>phone</mat-icon>
+          <span mat-line>080-4166-5830</span>
+        </a>
+        <a mat-list-item href="mailto:info@tathva.ed.jp">
+          <mat-icon mat-list-icon>mail</mat-icon>
+          <span mat-line>info@tathva.ed.jp</span>
+        </a>
+        <a mat-list-item href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+          <mat-icon mat-list-icon>pin_drop</mat-icon>
+          <p mat-line href="https://goo.gl/fajcss" target="_blank" rel="noopener">
+            4-1-1 Higashi Komatsugawa,
+          </p>
+          <p mat-line>Edogawa-ku Tokyo, 132-0033 Japan</p>
+        </a>
+      </mat-list>
+    </div>
+  </div>
+  <div class="body-item" fxLayout="column" fxLayoutWrap fxLayoutGap="1rem">
+    <h1 class="content-title" fxLayout="column" fxLayoutAlign="start end" fxLayout.gt-md="row">
+      <span fxFlex="grow">Things you can experience at Tathva Summer School!</span>
+      <span fxFlex="none">英語で学ぶ！体験する！遊ぶ！</span>
+    </h1>
+    <div fxLayout="column" fxLayout.gt-md="row-reverse" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center"
+      fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image mat-elevation-z3" src="assets/summer-school/worldgames.jpg">
+      </div>
+      <div>Play games from around the world!
+        <br/>世界の遊びで友達と仲良くなろう!
+      </div>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center" fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image  mat-elevation-z3" src="assets/summer-school/cuisine.jpg">
+      </div>
+      <div>Experience multicultural cuisine!
+        <br/>色々な文化の料理を体験しよう!
+      </div>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row-reverse" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center"
+      fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image mat-elevation-z3" src="assets/summer-school/Pepper.jpg">
+      </div>
+      <div>Meet and program Pepper!
+        <br/>ペッパーとプログラミングを学ぼう!
+      </div>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center" fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image  mat-elevation-z3" src="assets/summer-school/science.jpg">
+      </div>
+      <div>Develop your science skills!
+        <br/>理科のスキルを伸ばそう!
+      </div>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row-reverse" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center"
+      fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image mat-elevation-z3" src="assets/summer-school/excursion.jpg">
+      </div>
+      <div>Go on excursions!
+        <br/>遠足へ行こう!
+      </div>
+    </div>
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="start center" fxLayoutAlign.gt-md="space-around center" fxLayoutGap="1rem">
+      <div>
+        <img class="activity-image  mat-elevation-z3" src="assets/summer-school/culture.jpg">
+      </div>
+      <div>Dive into global arts and literature!
+        <br/>アートや物語の世界に飛びこもう!
+      </div>
+    </div>
+  </div>
+  <div class="body-item" fxLayout="column" fxLayoutWrap fxLayoutGap="1rem">
+    <h1 class="content-title" fxLayout="column" fxLayoutAlign="start start" fxLayout.gt-md="row" fxLayoutAlign.gt-md="start end">
+      <span fxFlex="grow">Don't delay, apply today!</span>
+      <span fxFlex="none">早く、今日で申し込んでください！</span>
+    </h1>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <a class="signup" mat-raised-button color="primary" href="https://goo.gl/forms/rZzdfRYAMF72sWZi2" target="_blank" rel="noopener">
+        To register for Tathva Summer School, click here.
+        <br />
+        <span>タトゥワサマースクールのお申し込みは、こちらをクリックしてください</span>
+      </a>
+    </div>
+  </div>
+</div>

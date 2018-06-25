@@ -62,3 +62,12 @@ a {
     word-wrap: break-word !important;
   }
 }
+
+a.link-no-dec {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}

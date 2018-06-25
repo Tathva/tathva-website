@@ -1,5 +1,4 @@
 @import 'src/theme';
-
 .mat-button {
   &.mat-small {
     min-width: 1%;
@@ -49,7 +48,6 @@ mat-sidenav {
   .site {
     min-height: calc(100vh - 56px);
   }
-
   .sidenav-container {
     margin-top: 56px;
   }
@@ -61,7 +59,6 @@ mat-sidenav {
       color: $dark;
     }
   }
-
   a {
     &:focus {
       outline: 0;
@@ -73,47 +70,37 @@ mat-toolbar {
   h1 {
     font-family: $brand-font;
   }
-
   .navlist {
     list-style-type: none;
-
     li {
       display: inline;
     }
-
-    li ~ li {
+    li~li {
       border-left: 1px solid;
     }
   }
-
   .linklist {
     list-style-type: none;
     padding-left: 0;
     padding-top: 120px;
-
     li {
       display: inline-block;
       vertical-align: top;
     }
-
-    ul > li {
+    ul>li {
       display: list-item;
       list-style-type: none;
     }
-
-    li > ul {
+    li>ul {
       padding-left: 0;
     }
-
     h3 {
       font-size: .8em;
     }
-
     a {
       font-size: .6em;
       text-decoration: none;
     }
-
     .linkset {
       padding-left: 10px;
       padding-right: 10px;
@@ -129,7 +116,6 @@ footer {
   mat-toolbar {
     height: $footer-height;
   }
-
   a {
     color: mat-color($tathva-app-accent);
   }
@@ -141,7 +127,6 @@ footer {
 
 .mat-list-item {
   line-height: 24px;
-
   a {
     text-decoration: none;
   }
@@ -164,16 +149,26 @@ footer {
 .title {
   h1 {
     font-size: 1.5rem;
-  }
-
-  // Scale down the title per screen size
+  } // Scale down the title per screen size
   @media screen and (max-width: $screen-xs) {
     // Position center
     width: 100%;
-
     h1 {
       font-size: 1rem;
       text-align: center;
     }
+  }
+}
+
+.summer-school-banner {
+  background-color: mat-color($tathva-app-accent);
+  display: block;
+  min-height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  >.tagline {
+    color: $fore-color;
+    font-family: $brand-font;
+    font-size: 1.5rem;
   }
 }
