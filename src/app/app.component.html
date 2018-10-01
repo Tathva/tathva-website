@@ -34,11 +34,6 @@
     <mat-sidenav-content id="content" class="site-container">
       <div class="site" #site>
 
-        <a class="link-no-dec" routerLink="/summer-school" *ngIf="router.url != '/summer-school'">
-          <div class="summer-school-banner mat-typography mat-elevation-z1">
-            <p class="tagline">We have a summer school! Click here to check it out!</p>
-          </div>
-        </a>
         <section>
           <router-outlet></router-outlet>
         </section>
