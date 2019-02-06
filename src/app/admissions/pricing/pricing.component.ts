@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Subject } from 'rxjs/Rx';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-pricing',

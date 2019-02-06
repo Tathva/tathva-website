@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface, SwiperPaginationInterface, SwiperNavigationInterface } from 'ngx-swiper-wrapper';
 import { IParallaxScrollConfig } from 'ng2-parallaxscroll';
 import { CalendarService } from '.././services/calendar.service';
 
@@ -11,15 +11,23 @@ import { CalendarService } from '.././services/calendar.service';
 export class HomeComponent implements OnInit {
 
   public config: SwiperConfigInterface = {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletClass: 'swiper-pagination-bullet',
+      bulletActiveClass: 'swiper-pagination-bullet-active',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     loop: true,
-    autoplay: 5000,
-    autoplayDisableOnInteraction: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     preloadImages: false,
-    lazyLoading: true
+    lazy: true
   };
 
   public paraConf: IParallaxScrollConfig = {
