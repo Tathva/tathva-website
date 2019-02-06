@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --env=prod --prod --aot",
+    "build": "ng build --prod --aot",
     "deploy:dev": "firebase deploy -P staging",
     "deploy:prod": "firebase deploy -P production",
     "test": "ng test",
