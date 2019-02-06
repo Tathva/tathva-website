@@ -7,8 +7,8 @@ import {
 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
-import { Subscription } from 'rxjs/Rx';
-import 'rxjs/add/operator/filter';
+import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 interface Link {
   url: string;
@@ -116,15 +116,15 @@ export class AppComponent implements OnInit, OnDestroy {
   public isOpen = false;
   public menuIcon = 'menu';
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
   ngOnInit() {
     if (isPlatformBrowser) {
-      this.routerSubscription = this.router.events
-        .filter(event => event instanceof NavigationEnd)
-        .subscribe(event => {
-          this.site.nativeElement.scrollIntoView();
-        });
+      this.routerSubscription = this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd)
+      ).subscribe(event => {
+        this.site.nativeElement.scrollIntoView();
+      });
     }
   }
 

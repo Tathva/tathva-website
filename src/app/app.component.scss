@@ -82,7 +82,6 @@ mat-toolbar {
   .linklist {
     list-style-type: none;
     padding-left: 0;
-    padding-top: 120px;
     li {
       display: inline-block;
       vertical-align: top;
@@ -119,10 +118,6 @@ footer {
   a {
     color: mat-color($tathva-app-accent);
   }
-}
-
-.mat-list.contact-list {
-  padding-top: 120px;
 }
 
 .mat-list-item {

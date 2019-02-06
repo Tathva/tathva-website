@@ -6,8 +6,12 @@
 <div [swiper]="config" class="swiper-container">
   <div class="swiper-wrapper">
     <div *ngFor="let image of images" class="swiper-slide">
-      <img data-src="{{image}}_quote.jpg" class="swiper-lazy" data-srcset="{{image}}_quote.jpg 1200w, {{image}}_quote.jpg 1x,
-                              {{image}}_sm.jpg 640w, {{image}}.jpg 768w, {{image}}.jpg 3x">
+      <img class="swiper-lazy" data-src="{{image}}_quote.jpg" data-srcset="{{image}}_sm.jpg 640w,
+          {{image}}.jpg 768w,
+          {{image}}_quote.jpg 1200w"
+        sizes="(max-width: 640px) 640px,
+          (max-width: 768px) 768px,
+          1200px">
       <div class="swiper-lazy-preloader"></div>
     </div>
   </div>
@@ -25,7 +29,8 @@
   <h1 class="content-title">Our Vision</h1>
   <div fxFlexAlign="center" class="body-item">
     <p>
-      At Tathva we aspire to create culturally sensitive, environmentally responsible global citizens who are prepared and capable
+      At Tathva we aspire to create culturally sensitive, environmentally responsible global citizens who are prepared
+      and capable
       of becoming the leaders of tomorrow's generation.
     </p>
     <p>
@@ -43,7 +48,8 @@
   </div>
 
   <div class="cards-container">
-    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center"
+      fxLayoutAlign.gt-xs="center">
       <mat-card class="values-card" fxFlex>
         <mat-card-title>Educate</mat-card-title>
         <mat-card-content>
@@ -77,11 +83,11 @@
   <div class="upcoming-container">
     <div class="calendar" fxLayout="column" fxLayoutAlign="stretch">
       <div id="container">
-        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm [items]="calEvents" [width]="810" [$prev]="prev"
-          [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
+        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.gt-sm [items]="calEvents" [width]="810"
+          [$prev]="prev" [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
         </div>
-        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm [items]="calEvents" [width]="232" [$prev]="prev"
-          [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
+        <div ng2-carouselamos class="slides-wrapper" fxShow="false" fxShow.lt-sm [items]="calEvents" [width]="232"
+          [$prev]="prev" [$next]="next" [$item]="item" (onSelectedItem)="selectedIndex = $event.index">
         </div>
 
         <ng-template #prev>
@@ -106,7 +112,8 @@
 
   <div parallax [config]="cardParaConf" class="mat-elevation-z1 cards-container links-parallax">
 
-    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center" fxLayoutAlign.gt-xs="center">
+    <div class="cards" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="2rem" fxLayoutAlign="space-between center"
+      fxLayoutAlign.gt-xs="center">
       <mat-card class="links-card" fxLayout="column">
         <mat-card-title>Meet Our Leaders</mat-card-title>
         <mat-card-content fxFlex>
@@ -123,7 +130,8 @@
         <mat-card-title>Board and Affiliations</mat-card-title>
         <mat-card-content fxFlex>
           <p>
-            Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint, Cambridge Checkpoint,
+            Tathva International School is affiliated to Cambridge authorized to offer Cambridge Primary Checkpoint,
+            Cambridge Checkpoint,
             IGCSE, O Level, AS/A Level (including science practical components)
           </p>
         </mat-card-content>

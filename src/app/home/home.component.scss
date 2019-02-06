@@ -53,15 +53,18 @@ $disabled-fg: #333;
 }
 
 ::ng-deep {
-  .swiper-pagination-bullet {
+    .swiper-pagination-bullet {
     background-color: mat-color($tathva-app-accent);
     opacity: 1;
   }
-  .swiper-pagination-bullet-active {
+    .swiper-pagination-bullet-active {
     background: mat-color($tathva-app-primary);
     transform: scale(1.5);
   }
 }
+
+
+
 
 .calender-container {
   height: auto;
